@@ -33,3 +33,22 @@
   font-size: 15px;
   line-height: 25px;
 }
+
+@media (min-width: 768px) {
+  .heading {
+    max-width: 585px;
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.43px;
+  }
+
+  .imgContainer {
+    margin-bottom: 63px;
+  }
+
+  .text {
+    max-width: 580px;
+    margin: 32px auto 97px;
+  }
+}
