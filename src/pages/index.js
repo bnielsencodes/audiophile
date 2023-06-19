@@ -2,6 +2,9 @@ import Head from "next/head";
 import Navigation from "@/components/navigation/Navigation";
 import Header from "@/components/header/Header";
 import Shop from "@/components/shop/Shop";
+import FeaturedZX9 from "@/components/featured-products/FeaturedZX9";
+import FeaturedZX7 from "@/components/featured-products/FeaturedZX7";
+import FeaturedYX1 from "@/components/featured-products/FeaturedYX1";
 
 export default function Home() {
   return (
@@ -15,6 +18,11 @@ export default function Home() {
       <Header />
       <main className="main">
         <Shop />
+        <div>
+          <FeaturedZX9 />
+          <FeaturedZX7 />
+          <FeaturedYX1 />
+        </div>
       </main>
     </>
   );
