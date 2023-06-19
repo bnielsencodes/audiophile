@@ -142,3 +142,13 @@
     text-align: left;
   }
 }
+
+@media (min-width: 1440px) {
+  .headerMain {
+    padding-inline: 165px;
+  }
+
+  .heading {
+    font-size: 56px;
+  }
+}
