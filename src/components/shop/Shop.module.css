@@ -71,3 +71,42 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 96px;
+  }
+
+  .item {
+    height: 166px;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .zx9 {
+    width: 154px;
+  }
+
+  .yx1 {
+    top: -52px;
+    width: 182px;
+  }
+
+  .heading {
+    margin-bottom: 14;
+  }
+
+  .shopText {
+    margin-bottom: 22px;
+  }
+
+  .text {
+    margin-right: 10px;
+  }
+}
