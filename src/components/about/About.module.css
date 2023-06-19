@@ -88,3 +88,17 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: 1440px) {
+  .about {
+    margin-bottom: 200px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .text {
+    margin-right: 100px;
+  }
+}
