@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navigation from "@/components/navigation/Navigation";
 import Header from "@/components/header/Header";
+import Shop from "@/components/shop/Shop";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Navigation indexNav="indexNav" />
       <Header />
       <main className="main">
+        <Shop />
       </main>
     </>
   );
