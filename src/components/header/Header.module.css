@@ -73,3 +73,41 @@
   letter-spacing: 1px;
 }
 
+@media (min-width: 768px) {
+  .headerMain {
+    height: 642px;
+  }
+
+  .imgContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 632px;
+  }
+
+  .img::after {
+    top: -51px;
+    background: url("/assets/home/tablet/image-header.jpg") center/cover
+      no-repeat;
+  }
+
+  .content {
+    margin-bottom: 38px;
+  }
+
+  .title {
+    margin-bottom: 24px;
+  }
+
+  .heading {
+    font-size: 56px;
+    line-height: 58px;
+    letter-spacing: 2px;
+  }
+
+  .text {
+    max-width: 342px;
+    margin-bottom: 40px;
+  }
+}
