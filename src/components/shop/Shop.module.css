@@ -220,3 +220,43 @@
     transition: color 0.2s linear;
   }
 }
+
+@media (min-width: 1440px) {
+  .section {
+    gap: 30px;
+    margin-bottom: 160px;
+  }
+
+  .item {
+    height: 204px;
+  }
+
+  .heading {
+    margin-bottom: 13px;
+    font-size: 18px;
+    line-height: 24.59px;
+    letter-spacing: 1.29px;
+  }
+
+  .markI,
+  .zx9,
+  .yx1 {
+    width: 220px;
+  }
+
+  .markI {
+    top: -80px;
+  }
+
+  .zx9 {
+    top: -73px;
+  }
+
+  .yx1 {
+    top: -70px;
+  }
+
+  .shopText {
+    margin-bottom: 30px;
+  }
+}
