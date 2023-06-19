@@ -179,3 +179,28 @@
     margin: 12px 0 30px;
   }
 }
+
+@media (min-width: 1440px) {
+  .zx9 {
+    height: 560px;
+  }
+
+  .imgContainer {
+    top: 115px;
+    width: 377px;
+  }
+
+  .circles {
+    bottom: -329px;
+    left: -278px;
+    width: 930px;
+  }
+
+  .heading {
+    font-size: 56px;
+  }
+
+  .text {
+    margin: 24px 0 40px;
+  }
+}
