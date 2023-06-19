@@ -69,3 +69,40 @@
   font-weight: 700;
   letter-spacing: 1px;
 }
+
+@media (min-width: 768px) {
+  .zx9 {
+    height: 720px;
+    padding-bottom: 50px;
+    margin-bottom: 32px;
+  }
+
+  .inner {
+    height: 100%;
+    background-position: 50% -289px;
+    background-size: 137%;
+  }
+
+  .imgContainer {
+    top: 60px;
+    width: 182px;
+  }
+
+  .inner2 {
+    position: relative;
+    width: 330px;
+  }
+
+  .heading {
+    width: 265px;
+    font-size: 56px;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .text {
+    margin: 24px 0 40px;
+    letter-spacing: 1px;
+  }
+}
