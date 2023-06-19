@@ -106,3 +106,76 @@
     letter-spacing: 1px;
   }
 }
+
+@media (min-width: 1024px) {
+  .zx9 {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    height: 485px;
+    padding: 0 25px;
+    margin-bottom: 48px;
+    background-image: none;
+    overflow: hidden;
+  }
+
+  .inner {
+    position: relative;
+    justify-content: center;
+    flex: 1 1 60%;
+    height: 100%;
+    background: none;
+    overflow: visible;
+  }
+
+  .imgContainer {
+    position: absolute;
+    top: 155px;
+    width: 280px;
+  }
+
+  .imgContainerInner {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+  }
+
+  .img {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .circles {
+    position: absolute;
+    bottom: -286px;
+    left: -264px;
+    z-index: -100;
+    width: 815px;
+    height: auto;
+  }
+
+  .inner2 {
+    position: relative;
+    z-index: 0;
+    flex: 1 1 40%;
+    height: auto;
+    margin: 10px 0 0 4px;
+    text-align: left;
+  }
+
+  .inner2 h1,
+  .inner2 p,
+  .inner2 a {
+    text-align: left;
+  }
+
+  .heading {
+    margin: 0;
+    font-size: 46px;
+  }
+
+  .text {
+    width: 325px;
+    margin: 12px 0 30px;
+  }
+}
