@@ -5,6 +5,26 @@ export default function Navigation(props) {
   return (
     <>
         <nav className={styles.nav}>
+          <div className={`${styles.tapLeft} ${styles.hiddenLg}`}>
+            <div className={styles.burgerIconContainer}>
+              <Image
+                className={`${styles.burgerIcon} ${
+                  showNav === true ? styles.burgerIconActive : ""
+                }`}
+                onClick={() => {
+                  setShowNav((prevState) => !prevState);
+                  setShowCart(
+                    showCart == true && showNav == true ? true : false
+                  );
+                }}
+                src="/assets/shared/tablet/icon-hamburger.svg"
+                alt="hamburger menu icon for dropdown navigation menu"
+                width="0"
+                height="0"
+                sizes="100vw"
+              />
+            </div>
+          </div>
           {/* MD/LG SCREENS NAVIGATION */}
           <NavList />
           {/* NAV LOGO */}
