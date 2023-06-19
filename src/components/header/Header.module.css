@@ -111,3 +111,34 @@
     margin-bottom: 40px;
   }
 }
+
+@media (min-width: 1024px) {
+  .headerMain {
+    padding-inline: 120px;
+  }
+
+  .img::after {
+    background: url("/assets/home/desktop/image-hero.jpg") center/cover
+      no-repeat;
+  }
+
+  .content {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .heading {
+    width: 400px;
+    font-size: 42px;
+    text-align: left;
+  }
+
+  .title {
+    margin-left: 0;
+    line-height: 19.12px;
+  }
+
+  .text {
+    text-align: left;
+  }
+}
