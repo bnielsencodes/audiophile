@@ -1,0 +1,75 @@
+.headerMain {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 510px;
+  background: #131313;
+}
+
+.img::after {
+  content: "";
+  position: absolute;
+  top: -51px;
+  left: 0px;
+  z-index: 100;
+  width: 100%;
+  height: 103%;
+  background: url("/assets/home/mobile/image-header.jpg") center/cover no-repeat;
+  filter: brightness(0.75);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title,
+.heading,
+.text {
+  position: relative;
+  z-index: 100;
+}
+
+.heading,
+.text {
+  text-align: center;
+}
+
+.title {
+  margin: -1px 0 16px 9px;
+  color: rgb(255 255 255 / 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.heading {
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 1.29px;
+}
+
+.text {
+  max-width: 330px;
+  margin: 24px 0 28px;
+  color: rgb(255 255 255 / 0.75);
+  line-height: 25px;
+}
+
+.link {
+  position: relative;
+  z-index: 200;
+}
+
+.headerBtn {
+  width: 160px;
+  height: 48px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
