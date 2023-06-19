@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavList from "./NavList";
+import MobileNavModal from "@/components/navigation/MobileNavModal.js";
 export default function Navigation(props) {
   return (
     <>
@@ -41,6 +42,7 @@ export default function Navigation(props) {
             </div>
           </Link>
         </nav>
+        <MobileNavModal showNav={showNav} />
     </>
   );
 }
