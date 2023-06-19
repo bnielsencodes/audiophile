@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "./NavList.module.css";
 
 export default function NavList() {
   return (
