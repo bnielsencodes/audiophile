@@ -23,3 +23,10 @@
     transition: color 0.2s linear;
   }
 }
+
+@media (min-width: 1440px) {
+  .list {
+    width: 420px;
+    margin-right: 115px;
+  }
+}
