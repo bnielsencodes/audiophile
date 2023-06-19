@@ -52,3 +52,39 @@
     margin: 32px auto 97px;
   }
 }
+
+@media (min-width: 1024px) {
+  .about {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 140px;
+  }
+
+  .heading {
+    max-width: 430px;
+    padding-right: 0;
+    margin: 0;
+    font-size: 32px;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0px;
+    width: 0;
+    margin: auto 0;
+    text-align: left;
+  }
+
+  .text {
+    padding-right: 0;
+    margin: 33px 25px 0 0;
+  }
+
+  .imgContainer {
+    order: 1;
+    flex: 1 1 0px;
+    width: 0;
+    margin-bottom: 0;
+  }
+}
