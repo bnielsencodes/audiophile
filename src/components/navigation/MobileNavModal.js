@@ -1,3 +1,5 @@
+import styles from "./MobileNavModal.module.css";
+
 export default function MobileNav(props) {
   return (
     <>
