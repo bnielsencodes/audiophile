@@ -34,3 +34,20 @@
 .listItem:not(:last-child) {
   margin-bottom: 65px;
 }
+
+@media (min-width: 768px) {
+  .overlayBg {
+    height: 342px;
+    padding: 109px 40px 0;
+  }
+
+  .list {
+    flex-direction: row;
+    gap: 12px;
+    padding: 95px 30px 55px;
+  }
+
+  .listItem:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
