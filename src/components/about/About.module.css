@@ -1,0 +1,35 @@
+.about {
+  text-align: center;
+}
+
+.imgContainer {
+  width: 100%;
+  margin-bottom: 33px;
+  filter: brightness(0.85);
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.heading {
+  max-width: 320px;
+  margin: 0 auto;
+  font-size: 28px;
+  line-height: 38.25px;
+  letter-spacing: 1px;
+}
+
+.heading span {
+  color: var(--color-accent);
+}
+
+.text {
+  max-width: 500px;
+  margin: 22px auto 119px;
+  color: rgb(0 0 0 / 0.5);
+  font-size: 15px;
+  line-height: 25px;
+}
