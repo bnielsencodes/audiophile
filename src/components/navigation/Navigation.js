@@ -5,6 +5,9 @@ import MobileNavModal from "@/components/navigation/MobileNavModal.js";
 export default function Navigation(props) {
   return (
     <>
+      <div
+        className={styles.navContainer}
+      >
         <nav className={styles.nav}>
           <div className={`${styles.tapLeft} ${styles.hiddenLg}`}>
             <div className={styles.burgerIconContainer}>
@@ -43,6 +46,7 @@ export default function Navigation(props) {
           </Link>
         </nav>
         <MobileNavModal showNav={showNav} />
+      </div>
     </>
   );
 }
