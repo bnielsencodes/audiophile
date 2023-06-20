@@ -106,3 +106,46 @@
     margin-left: auto;
   }
 }
+
+@media (min-width: 1024px) {
+  .hiddenLg {
+    display: none;
+  }
+
+  .nav {
+    width: calc(100vw - 240px);
+    height: 97px;
+    padding: 6px 0 0;
+    margin: 0 auto;
+  }
+
+  .logoContainer {
+    order: 1;
+    margin-left: 0;
+  }
+
+  .navRight {
+    order: 2;
+    width: 40px;
+    margin-left: 0;
+  }
+
+  .tapRight {
+    margin: 0 0 0 auto;
+  }
+
+  .cartIconContainer {
+    width: 23.33px;
+  }
+
+  .burgerIcon:hover,
+  .linkComponent .logo:hover,
+  .cartIcon:hover {
+    filter: brightness(0%) saturate(100%) invert(82%) sepia(47%) saturate(4886%)
+      hue-rotate(327deg) brightness(90%) contrast(86%);
+  }
+
+  .cartIcon:hover {
+    cursor: pointer;
+  }
+}
