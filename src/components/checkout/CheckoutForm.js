@@ -38,6 +38,23 @@ const SubmitBtn = ({ ...props }) => {
 };
 
 export default function CheckoutForm(props) {
+  const nameRegEx = /^[a-zA-Z][0-9a-zA-Z .,'-]*$/;
+  const phoneRegEx =
+    /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+  // Valid formats:
+  //  (123) 456-7890
+  //  (123)456-7890
+  //  123-456-7890
+  //  123.456.7890
+  //  1234567890
+  //  +31636363634
+  //  075-63546725
+  const addressRegEx =
+    /\d+[ ](?:[A-Za-z0-9.-]+[ ]?)+(?:Avenue|Lane|Road|Boulevard|Drive|Street|Ave|Dr|Rd|Blvd|Ln|St)\.?/;
+  const numRegEx = /^[0-9]+$/;
+  const cityRegEx = /(?:[A-Z][a-z.-]+[ ]?)+/;
+  const countryRegEx = /[a-zA-Z]{2,}/;
+
   return (
     <>
     </>
