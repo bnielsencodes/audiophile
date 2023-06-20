@@ -99,3 +99,19 @@
     margin: 14px 0 22px;
   }
 }
+
+@media (min-width: 1440px) {
+  .item {
+    gap: 120px;
+    margin-bottom: 160px;
+  }
+
+  .imgContainer {
+    margin-bottom: 17px;
+  }
+
+  .text {
+    width: 495px;
+    margin: 32px 0 40px;
+  }
+}
