@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 25px 0 50px;
+}
+
+.img {
+  width: 100%;
+  max-width: 381px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.heading {
+  margin: 31px 0;
+  font-size: 24px;
+  line-height: 32.78px;
+  letter-spacing: 1.71px;
+}
