@@ -207,6 +207,82 @@ export default function CheckoutForm(props) {
                     Payment Details
                   </h2>
                   <fieldset className={styles.paymentMethodContainer}>
+                    <label
+                      className={`${styles.label} ${styles.radioGroupLabel}`}
+                      id="radio-group-label"
+                      htmlFor="radio-group"
+                    >
+                      Payment Method
+                    </label>
+                    <div
+                      className={styles.radioGroup}
+                      id="radio-group"
+                      role="group"
+                      aria-labelledby="radio-group"
+                    >
+                      <div>
+                        <Field name="paymentMethodChosen">
+                          {({ field, meta }) => (
+                            <>
+                              <label
+                                className={
+                                  values.paymentMethod === "eMoney"
+                                    ? `${styles.radio} ${styles.radioBorder}`
+                                    : styles.radio
+                                }
+                                htmlFor="e-money"
+                              >
+                                <input
+                                  {...field}
+                                  className={styles.eMoney}
+                                  id="e-money"
+                                  value="eMoney"
+                                  name="paymentMethod"
+                                  type="radio"
+                                />
+                                {(values.paymentMethod === "" ||
+                                  "cashOnDelivery") && (
+                                  <div className={styles.unchecked}></div>
+                                )}
+                                {values.paymentMethod === "eMoney" && (
+                                  <div className={styles.checked}></div>
+                                )}
+                                <p>e-Money</p>
+                              </label>
+                              <label
+                                className={
+                                  values.paymentMethod === "cashOnDelivery"
+                                    ? `${styles.radio} ${styles.radioBorder}`
+                                    : styles.radio
+                                }
+                                htmlFor="cash-on-delivery"
+                              >
+                                <input
+                                  {...field}
+                                  className={styles.cashOnDelivery}
+                                  id="cash-on-delivery"
+                                  value="cashOnDelivery"
+                                  name="paymentMethod"
+                                  type="radio"
+                                />
+                                {(values.paymentMethod === "" || "eMoney") && (
+                                  <div className={styles.unchecked}></div>
+                                )}
+                                {values.paymentMethod === "cashOnDelivery" && (
+                                  <div className={styles.checked}></div>
+                                )}
+                                <p>Cash on Delivery</p>
+                              </label>
+                              {meta.touched && meta.error ? (
+                                <div className={styles.errorRadio}>
+                                  {meta.error}
+                                </div>
+                              ) : null}
+                            </>
+                          )}
+                        </Field>
+                      </div>
+                    </div>
                   </fieldset>
 
                   <div className={styles.eMoneyContainer}>
