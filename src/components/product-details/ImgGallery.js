@@ -1,4 +1,5 @@
 import Image from "next/image";
+import styles from "./ImgGallery.module.css";
 
 export default function ImgGallery(props) {
   return (
