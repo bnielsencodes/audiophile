@@ -1,0 +1,18 @@
+.list {
+  padding: 0;
+  width: 120px;
+  margin: 0 auto 49px;
+}
+
+.item {
+  margin-bottom: 14px;
+}
+
+.link {
+  color: var(--color-neutral-200);
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+

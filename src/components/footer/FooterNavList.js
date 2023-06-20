@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "./FooterNavList.module.css";
 
 export default function FooterNavList() {
   return (
