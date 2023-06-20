@@ -54,3 +54,17 @@
   font-weight: 700;
   line-height: 24.59px;
 }
+
+@media (min-width: 768px) {
+  .summary {
+    padding-inline: 33px;
+  }
+
+  .heading {
+    padding-top: 31px;
+  }
+
+  .totalSection {
+    margin-bottom: 39px;
+  }
+}
