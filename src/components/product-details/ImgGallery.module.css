@@ -53,3 +53,14 @@
     gap: 24px;
   }
 }
+
+@media (min-width: 1440px) {
+  .container {
+    gap: 30px;
+    margin-bottom: 160px;
+  }
+
+  .inner {
+    gap: 32px;
+  }
+}
