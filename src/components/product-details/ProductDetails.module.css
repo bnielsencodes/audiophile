@@ -1,0 +1,80 @@
+.container {
+  gap: 60px;
+  margin-bottom: 85px;
+  text-align: left;
+}
+
+.imgContainer {
+  margin-bottom: 25px;
+}
+
+.heading {
+  margin: 24px 0 0;
+  font-size: 28px;
+  line-height: 38.25px;
+  letter-spacing: 1px;
+}
+
+.text {
+  margin: 23px 0 25px;
+  color: rgb(0 0 0 / 0.5);
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.59px;
+  letter-spacing: 1.29px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  width: 13px;
+  margin-right: 3px;
+}
+
+.addToCart {
+  display: flex;
+  justify-content: space-between;
+  width: 296px;
+  height: 48px;
+}
+
+.quantityContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  height: 48px;
+  background: var(--color-neutral-300);
+  font-size: 12px;
+}
+
+.removeContainer,
+.addContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.quantityContainer p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.removeBtn,
+.addBtn {
+  width: 45px;
+  color: rgb(0 0 0 / 0.25);
+  text-align: center;
+}
+
+.quantity {
+  font-weight: 700;
+}

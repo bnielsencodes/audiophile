@@ -3,6 +3,8 @@ import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import ProductImg from "./ProductImg";
 import Features from "./Features";
 import ImgGallery from "./ImgGallery";
+import styles from "./ProductDetails.module.css";
+
 export default function ProductDetails(props) {
   const product = props.product;
 
