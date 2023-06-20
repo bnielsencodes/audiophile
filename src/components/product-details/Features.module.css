@@ -64,3 +64,42 @@
     margin: 0 auto 0 118px;
   }
 }
+
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 110px;
+  }
+
+  .text {
+    flex: 1 1 66%;
+  }
+
+  .text h5 {
+    margin-bottom: 32px;
+  }
+
+  .text p {
+    width: 517px;
+  }
+
+  .inTheBox {
+    flex-direction: column;
+    flex: 1 1 33%;
+    margin: 0;
+    line-height: 36px;
+    letter-spacing: 1.14px;
+  }
+
+  .inTheBox h5 {
+    flex: none;
+    width: 100%;
+    margin-bottom: 33px;
+  }
+
+  .list {
+    width: 250px;
+    margin-inline: 0;
+  }
+}
