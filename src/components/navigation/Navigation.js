@@ -1,3 +1,5 @@
+import { useContext, useState } from "react";
+import { CartContext } from "../../CartContext.js";
 import Image from "next/image";
 import Link from "next/link";
 import NavList from "./NavList";
@@ -6,8 +8,16 @@ import CartModal from "@/components/cart-modal/CartModal";
 import styles from "./Navigation.module.css";
 
 export default function Navigation(props) {
+  const cart = useContext(CartContext);
+
   const [showNav, setShowNav] = useState(false);
   const [showCart, setShowCart] = useState(false);
+
+  // get quantity of total items in cart
+  const productsCount = cart.items.reduce(
+    (sum, product) => sum + product.quantity,
+    0
+  );
 
   return (
     <>
