@@ -56,3 +56,10 @@
     left: 97px;
   }
 }
+
+@media (min-width: 1440px) {
+  .inner {
+    top: 101px;
+    margin: 0;
+  }
+}
