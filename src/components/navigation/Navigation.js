@@ -75,6 +75,9 @@ export default function Navigation(props) {
                   height="0"
                   sizes="100vw"
                 />
+                <div className={styles.badge}>
+                  <span>{productsCount}</span>
+                </div>
               </div>
             </div>
           </div>
