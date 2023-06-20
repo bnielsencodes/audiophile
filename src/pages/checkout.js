@@ -5,6 +5,8 @@ import PayConfirmModal from "@/components/checkout/PayConfirmModal";
 import Footer from "@/components/footer/Footer";
 
 export default function Checkout() {
+  const [showPayConfirm, setShowPayConfirm] = useState(false);
+
   return (
     <>
       <Head>
@@ -15,6 +17,8 @@ export default function Checkout() {
       </Head>
       <Navigation />
       <PayConfirmModal
+        showPayConfirm={showPayConfirm}
+        setShowPayConfirm={setShowPayConfirm}
       />
       <header className={styles.header}>
         <Link className={styles.headerLink} href="/">
