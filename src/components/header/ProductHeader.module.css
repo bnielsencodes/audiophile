@@ -38,3 +38,10 @@
     transition: color 0.2s linear;
   }
 }
+
+@media (min-width: 1440px) {
+  .header {
+    height: 160px;
+    padding: 0 165px;
+  }
+}
