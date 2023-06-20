@@ -13,3 +13,32 @@
   height: auto;
   border-radius: 8px;
 }
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 120px;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 42%;
+    width: 0;
+  }
+
+  .imgContainer {
+    margin: 0;
+  }
+
+  .imgContainer3 {
+    flex: 1 1 58%;
+    width: 0;
+  }
+
+  .img {
+    height: 100%;
+  }
+}
