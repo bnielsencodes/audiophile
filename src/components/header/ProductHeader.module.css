@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 64px;
+  margin-left: 24px;
+  background: none;
+}
+
+.link {
+  margin: 0 0 7px;
+  color: rgb(0 0 0 / 0.5);
+  font-size: 15px;
+  line-height: 25px;
+}
