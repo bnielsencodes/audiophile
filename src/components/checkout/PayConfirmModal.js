@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { CartContext } from "../../CartContext.js";
+import { getProductData } from "../../productsData.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import checkIcon from "/public/assets/checkout/icon-order-confirmation.svg";
@@ -5,6 +8,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function PayConfirmModal(props) {
+  const cart = useContext(CartContext);
+  const id = cart.items[0].id;
+  const productData = getProductData(id);
+
   return (
     <>
       <div className={styles.payConfirmOverlay}>
@@ -50,16 +57,19 @@ export default function PayConfirmModal(props) {
                         {productData.shortName}
                       </h6>
                       <p className={styles.quantity}>
+                        x{cart.items[0].quantity}
                       </p>
                     </div>
                     <div className={styles.priceContainer}>
                       <div className={styles.iconContainer}>
                         <FontAwesomeIcon icon={faDollarSign} />
                       </div>
+                      <p>{productData.price.toLocaleString("en-US")}</p>
                     </div>
                   </div>
                 </div>
                 <p className={styles.other}>
+                  and {cart.items.length - 1} other items&#40;s&#41;
                 </p>
               </div>
             </div>
@@ -69,6 +79,7 @@ export default function PayConfirmModal(props) {
                 <div className={styles.totalIconContainer}>
                   <FontAwesomeIcon icon={faDollarSign} />
                 </div>
+                <p>{cart.getTotalCost(50)}</p>
               </div>
             </div>
           </div>
