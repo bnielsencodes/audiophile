@@ -66,13 +66,6 @@
   z-index: 200;
 }
 
-.headerBtn {
-  width: 160px;
-  height: 48px;
-  font-size: 13px;
-  letter-spacing: 1px;
-}
-
 @media (min-width: 768px) {
   .headerMain {
     height: 642px;
