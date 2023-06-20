@@ -46,3 +46,21 @@
     max-width: 560px;
   }
 }
+
+@media (min-width: 768px) {
+  .img {
+    margin-bottom: 28px;
+  }
+
+  .heading {
+    width: 340px;
+    margin-top: 16px;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.43px;
+  }
+
+  .text {
+    margin-top: 20px;
+  }
+}
