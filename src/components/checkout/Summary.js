@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../../CartContext.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import SummaryItem from "./SummaryItem.js";
 
 export default function Summary(props) {
   const cart = useContext(CartContext);
@@ -11,10 +12,15 @@ export default function Summary(props) {
     0
   );
 
+  const summaryItems = cart.items.map((product) => {
+    return <SummaryItem key={product.id} product={product} />;
+  });
+
   return (
     <>
       <div className={styles.summary}>
         <h4 className={styles.heading}>Summary</h4>
+        <div>{productsCount > 0 && summaryItems}</div>
 
         <div className={styles.totalSection}>
           <div className={styles.totalTopContainer}>
