@@ -123,6 +123,55 @@ export default function CheckoutForm(props) {
       >
         {({ values }) => (
           <Form>
+            <div className={styles.formContainer}>
+              <div className={styles.checkoutForm} id={styles.checkoutFormId}>
+                <h1 className={styles.formHeading}>Checkout</h1>
+                <div className={styles.section}>
+                  <h2 className={styles.sectionHeading}>Billing Details</h2>
+                  <div className={styles.nameEmailContainer}>
+                    <div className={styles.nameContainer}>
+                    </div>
+                    <div className={styles.emailContainer}>
+                    </div>
+                  </div>
+                  <div className={styles.phoneContainer}>
+                  </div>
+                </div>
+
+                <div className={styles.section}>
+                  <h2 className={styles.sectionHeading}>Shipping Info</h2>
+                  <div className={styles.addressContainer}>
+                  </div>
+                  <div className={styles.zipCityContainer}>
+                    <div className={styles.zipContainer}>
+                    </div>
+                    <div className={styles.cityContainer}>
+                    </div>
+                  </div>
+                  <div className={styles.countryContainer}>
+                  </div>
+                </div>
+
+                <div className={styles.section}>
+                  <h2
+                    className={`${styles.sectionHeading} ${styles.paymentMethodHeading}`}
+                  >
+                    Payment Details
+                  </h2>
+                  <fieldset className={styles.paymentMethodContainer}>
+                  </fieldset>
+
+                  <div className={styles.eMoneyContainer}>
+                    <div className={styles.eNumberContainer}>
+                    </div>
+                    <div className={styles.ePinContainer}>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.summary}>
+              </div>
+            </div>
           </Form>
         )}
       </Formik>
