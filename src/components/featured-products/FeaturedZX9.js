@@ -45,7 +45,7 @@ export default function FeaturedZX9() {
           </div>
         </div>
         <div className={styles.inner2}>
-          <h1 className={styles.heading}>ZX9 Speaker</h1>
+          <h2 className={styles.heading}>ZX9 Speaker</h2>
           <p className={styles.text}>
             Upgrade to premium speakers that are phenomenally built to deliver
             remarkable sound.

@@ -48,6 +48,7 @@
 .heading {
   width: 200px;
   margin: auto;
+  color: var(--color-neutral-100);
   font-size: 36px;
   line-height: 40px;
   letter-spacing: 1.29px;
@@ -163,7 +164,7 @@
     text-align: left;
   }
 
-  .inner2 h1,
+  .inner2 h2,
   .inner2 p,
   .inner2 a {
     text-align: left;

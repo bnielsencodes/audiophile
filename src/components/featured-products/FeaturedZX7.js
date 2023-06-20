@@ -31,7 +31,7 @@ export default function FeaturedZX7() {
           sizes="100vw"
         />
         <div className={styles.inner}>
-          <h2 className={styles.heading}>ZX7 Speaker</h2>
+          <h3 className={styles.heading}>ZX7 Speaker</h3>
           <Link href="/speakers/zx7">
             <input
               className="btn btn--border btn--zx7"

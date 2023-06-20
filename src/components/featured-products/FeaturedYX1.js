@@ -34,7 +34,7 @@ export default function FeaturedYX1() {
         </div>
         <div className={styles.container2}>
           <div className={styles.yx1}>
-            <h4 className={styles.heading}>YX1 Earphones</h4>
+            <h3 className={styles.heading}>YX1 Earphones</h3>
             <Link className={styles.link} href="/earphones/yx1">
               <input
                 className="btn btn--border btn--yx1"
