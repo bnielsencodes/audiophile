@@ -58,6 +58,19 @@ export default function CheckoutForm(props) {
   return (
     <>
       <Formik
+        initialValues={{
+          name: "",
+          email: "",
+          phone: "",
+          address: "",
+          zip: "",
+          city: "",
+          country: "",
+          paymentMethod: "",
+          paymentMethodChosen: "",
+          eMoneyNumber: "",
+          eMoneyPin: "",
+        }}
       >
         {({ values }) => (
           <Form>
