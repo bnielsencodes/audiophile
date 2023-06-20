@@ -48,3 +48,13 @@
     margin-bottom: 39px;
   }
 }
+
+@media (min-width: 1440px) {
+  .alsoLike {
+    margin-bottom: 246px;
+  }
+
+  .container {
+    gap: 30px;
+  }
+}
