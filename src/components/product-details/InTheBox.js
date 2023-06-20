@@ -1,3 +1,5 @@
+import styles from "./InTheBox.module.css";
+
 export default function InTheBox(props) {
   return (
     <>

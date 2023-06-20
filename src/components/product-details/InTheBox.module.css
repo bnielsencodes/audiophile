@@ -1,0 +1,13 @@
+.item {
+  margin-bottom: 8px;
+  color: rgb(0 0 0 / 0.5);
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.item span {
+  display: inline-block;
+  width: 20px;
+  margin-right: 19px;
+  color: var(--color-accent);
+}
