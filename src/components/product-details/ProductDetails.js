@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { CartContext } from "../../CartContext.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import ProductImg from "./ProductImg";
@@ -7,6 +9,8 @@ import styles from "./ProductDetails.module.css";
 
 export default function ProductDetails(props) {
   const product = props.product;
+  const cart = useContext(CartContext);
+  const productQuantity = cart.getProductQuantity(product.id);
 
   return (
     <>
