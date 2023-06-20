@@ -114,6 +114,12 @@ export default function CheckoutForm(props) {
                 .required("Required"),
           }),
         })}
+        onSubmit={(values, { setSubmitting }) => {
+          setTimeout(() => {
+            props.setShowPayConfirm((prevState) => !prevState);
+            setSubmitting(false);
+          }, 600);
+        }}
       >
         {({ values }) => (
           <Form>
