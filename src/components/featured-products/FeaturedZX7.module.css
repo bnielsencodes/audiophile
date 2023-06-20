@@ -45,3 +45,14 @@
     left: 64px;
   }
 }
+
+@media (min-width: 1024px) {
+  .zx7 {
+    margin-bottom: 48px;
+  }
+
+  .inner {
+    top: 25%;
+    left: 97px;
+  }
+}
