@@ -205,3 +205,9 @@
     border-radius: 0 8px 8px 0;
   }
 }
+
+@media (min-width: 1024px) {
+  .summary {
+    margin-bottom: 46px;
+  }
+}
