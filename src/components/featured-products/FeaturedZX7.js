@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./FeaturedZX7.module.css";
 
 export default function FeaturedZX7() {
   return (

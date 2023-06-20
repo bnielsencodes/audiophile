@@ -1,0 +1,36 @@
+.zx7 {
+  position: relative;
+  width: 100%;
+  margin-bottom: 17px;
+  filter: brightness(0.93);
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.inner {
+  position: absolute;
+  top: 101px;
+  left: 20px;
+}
+
+.heading {
+  margin-bottom: 31px;
+  color: var(--color-neutral-500);
+  font-size: 28px;
+  line-height: 38.25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.zx7Btn {
+  width: 160px;
+  height: 48px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 17.76px;
+  letter-spacing: 1px;
+}
