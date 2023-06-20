@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import ProductImg from "./ProductImg";
 import Features from "./Features";
 import ImgGallery from "./ImgGallery";
 export default function ProductDetails(props) {
@@ -8,6 +9,9 @@ export default function ProductDetails(props) {
   return (
     <>
       <section className={styles.container}>
+        <div className={styles.imgContainer}>
+          <ProductImg product={props.product} />
+        </div>
         <div className={styles.innerContainer}>
           {product.new && (
             <p
