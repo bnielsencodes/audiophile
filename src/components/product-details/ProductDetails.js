@@ -36,6 +36,45 @@ export default function ProductDetails(props) {
             <div className="price">{props.product.priceString}</div>
           </div>
           <div className={styles.addToCart}>
+            {productQuantity > 0 ? (
+              <>
+                <div className={styles.quantityContainer}>
+                  <div className={styles.removeContainer}>
+                    <p
+                      className={styles.removeBtn}
+                    >
+                      &minus;
+                    </p>
+                  </div>
+                  <p className={styles.quantity}>{productQuantity}</p>
+                  <div className={styles.addContainer}>
+                    <p
+                      className={styles.addBtn}
+                    >
+                      &#43;
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <input
+                    className="add-to-cart btn btn--orange btn-text--white"
+                    type="button"
+                    value="Remove"
+                  />
+                </div>
+              </>
+            ) : (
+              <>
+                <div>
+                  <input
+                    className="add-to-cart btn btn--orange btn-text--white"
+                    onClick={() => cart.addOneToCart(product.id)}
+                    type="button"
+                    value="Add to Cart"
+                  />
+                </div>
+              </>
+            )}
           </div>
         </div>
       </section>
