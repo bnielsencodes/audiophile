@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./CategoryItem.module.css";
 
 export default function CategoryItem(props) {
   const product = props.item;

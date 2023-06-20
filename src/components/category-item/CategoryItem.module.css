@@ -1,0 +1,42 @@
+.container {
+  text-align: center;
+}
+
+.container:not(:last-of-type) {
+  margin-bottom: 120px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgContainer {
+  width: 100%;
+  height: auto;
+  margin-bottom: 17px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.heading {
+  width: 200px;
+  margin: 23px auto 4px;
+  font-size: 28px;
+  line-height: 38.25px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.text {
+  margin: 23px 0 24px;
+  color: rgb(0 0 0 / 0.5);
+  font-size: 15px;
+  line-height: 25px;
+}
