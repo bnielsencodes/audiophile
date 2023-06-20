@@ -68,6 +68,9 @@ export default function Summary(props) {
             </div>
           </div>
         </div>
+
+        {/* submit form button */}
+        {props.submitBtn}
       </div>
     </>
   );

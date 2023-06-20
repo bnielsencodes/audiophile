@@ -1,5 +1,7 @@
 import { Formik, Field, Form, useField } from "formik";
 import * as Yup from "yup";
+import Summary from "./Summary";
+
 const TextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
   return (
@@ -330,6 +332,15 @@ export default function CheckoutForm(props) {
                 </div>
               </div>
               <div className={styles.summary}>
+                <Summary
+                  submitBtn={
+                    <SubmitBtn
+                      name="submit"
+                      type="submit"
+                      value="Continue & Pay"
+                    />
+                  }
+                />
               </div>
             </div>
           </Form>
