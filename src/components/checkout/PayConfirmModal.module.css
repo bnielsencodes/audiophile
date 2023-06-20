@@ -167,3 +167,41 @@
 .backToHomeBtn {
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  .container {
+    top: 132px;
+    right: 50%;
+    min-width: 540px;
+    padding: 48px;
+    margin: 0;
+    transform: translateX(50%);
+  }
+
+  .heading {
+    margin: 26px 0 24px;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14px;
+  }
+
+  .summary {
+    display: flex;
+    width: 100%;
+    height: 140px;
+    margin: 33px 0 47px;
+  }
+
+  .itemsContainer {
+    width: 246px;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .totalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 198px;
+    border-radius: 0 8px 8px 0;
+  }
+}
