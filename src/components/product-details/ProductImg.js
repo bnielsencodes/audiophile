@@ -1,4 +1,5 @@
 import Image from "next/image";
+import styles from "./ProductImg.module.css";
 
 export default function ProductImg(props) {
   return (
