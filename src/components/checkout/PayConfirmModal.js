@@ -6,6 +6,7 @@ import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import checkIcon from "/public/assets/checkout/icon-order-confirmation.svg";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./PayConfirmModal.module.css";
 
 export default function PayConfirmModal(props) {
   const cart = useContext(CartContext);

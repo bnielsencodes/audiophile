@@ -1,0 +1,169 @@
+.payConfirmOverlay {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 2275px;
+}
+
+.payConfirmBackdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 5, 5, 0.4);
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  padding: 32px;
+  border-radius: 8px;
+  margin: 134px 24px 0;
+  background: var(--color-neutral-100);
+}
+
+.checkContainer {
+  width: 64px;
+  height: auto;
+}
+
+.heading {
+  margin: 17px 0 16px;
+  color: var(--color-neutral-400);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.86px;
+  text-transform: uppercase;
+}
+
+.subheading {
+  margin: 0;
+  color: rgb(0 0 0 / 0.5);
+}
+
+.summary {
+  margin: 24px 0 23px;
+  font-weight: 600;
+}
+
+.itemsContainer {
+  padding: 23px 24px 24px;
+  border-radius: 8px 8px 0 0;
+  background: var(--color-neutral-300);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 11px;
+}
+
+.imgContainer {
+  position: relative;
+  min-width: 47px;
+  height: 47px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.productDetails {
+  width: 100%;
+  line-height: 25px;
+}
+
+.productDetails h6 {
+  letter-spacing: 0;
+}
+
+.nameQuantityContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shortName {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.quantity {
+  margin: 0;
+  color: rgba(5, 5, 5, 0.5);
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+  color: rgba(5, 5, 5, 0.5);
+  font-size: 14px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  width: 8.5px;
+  margin: 0 3px 0 0;
+}
+
+.priceContainer p {
+  margin: 0;
+  color: rgb(0 0 0 / 0.5);
+}
+
+.other {
+  padding-top: 12px;
+  border-top: 1px solid rgb(0 0 0 / 0.08);
+  margin: 0;
+  color: rgb(0 0 0 / 0.5);
+  font-size: 12px;
+  line-height: 16.39px;
+  letter-spacing: -0.21px;
+  text-align: center;
+}
+
+.totalContainer {
+  padding: 15px 24px 19px;
+  border-radius: 0 0 8px 8px;
+  background: var(--color-neutral-400);
+}
+
+.totalText {
+  margin: 0 0 8px;
+  color: rgb(255 255 255 / 0.5);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.totalPriceContainer {
+  display: flex;
+  align-items: center;
+  color: var(--color-neutral-100);
+  font-size: 18px;
+  line-height: 24.59px;
+}
+
+.totalIconContainer {
+  display: flex;
+  align-items: center;
+  width: 10.85px;
+  margin: 1px 3px 0 0;
+}
+
+.totalPriceContainer p {
+  margin: 0;
+}
+
+.backToHomeBtn {
+  width: 100%;
+}
