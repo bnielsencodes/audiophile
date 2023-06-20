@@ -42,6 +42,7 @@ export default function ProductDetails(props) {
                   <div className={styles.removeContainer}>
                     <p
                       className={styles.removeBtn}
+                      onClick={() => cart.removeOneFromCart(product.id)}
                     >
                       &minus;
                     </p>
@@ -50,6 +51,7 @@ export default function ProductDetails(props) {
                   <div className={styles.addContainer}>
                     <p
                       className={styles.addBtn}
+                      onClick={() => cart.addOneToCart(product.id)}
                     >
                       &#43;
                     </p>
@@ -58,6 +60,7 @@ export default function ProductDetails(props) {
                 <div>
                   <input
                     className="add-to-cart btn btn--orange btn-text--white"
+                    onClick={() => cart.deleteFromCart(product.id)}
                     type="button"
                     value="Remove"
                   />
