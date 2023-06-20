@@ -1,5 +1,10 @@
 import { productsArray } from "@/productsData";
 import Head from "next/head";
+import Navigation from "@/components/navigation/Navigation";
+import CategoryHeader from "@/components/header/CategoryHeader";
+import Shop from "@/components/shop/Shop";
+import About from "@/components/about/About";
+import Footer from "@/components/footer/Footer";
 
 export default function Headphones() {
   return (
@@ -10,10 +15,15 @@ export default function Headphones() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon.ico" />
       </Head>
+      <Navigation />
+      <CategoryHeader category={`Headphones`} />
       <main id="main--products" className="main">
         <div className="spacer-top hidden-sm-md"></div>
+        <Shop />
         <div className="spacer hidden-sm-lg"></div>
+        <About />
       </main>
+      <Footer />
     </>
   );
 }
