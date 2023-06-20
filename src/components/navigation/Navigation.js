@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import NavList from "./NavList";
 import MobileNavModal from "@/components/navigation/MobileNavModal.js";
+import styles from "./Navigation.module.css";
 
 export default function Navigation(props) {
   const [showNav, setShowNav] = useState(false);
