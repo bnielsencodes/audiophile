@@ -28,6 +28,7 @@ export default function Cart(props) {
       <div className={styles.cartOverlay}>
         <div
           className={styles.cartBackdrop}
+          onClick={() => props.setShowCart(false)}
         ></div>
         <div className={styles.cart}>
           <div className={styles.header}>
