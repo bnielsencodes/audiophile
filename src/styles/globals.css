@@ -16,3 +16,15 @@
 *::after {
   box-sizing: border-box;
 }
+
+/* HIDE SCROLLBAR BUT STILL ALLOW SCROLL (CHROME, SAFARI, OPERA) */
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* HIDE SCROLLBAR BUT STILL ALLOW SCROLL (FIREFOX) */
+@-moz-document url-prefix() {
+  html {
+    scrollbar-width: none;
+  }
+}
