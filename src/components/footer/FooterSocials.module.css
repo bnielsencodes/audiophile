@@ -21,3 +21,17 @@
     margin: 0;
   }
 }
+
+@media (min-width: 1024px) {
+  .link:hover svg {
+    fill: var(--color-accent);
+    -webkit-transition: fill 0.2s linear;
+    transition: fill 0.2s linear;
+  }
+
+  .socials {
+    position: absolute;
+    right: 0;
+    top: -86.5px;
+  }
+}
