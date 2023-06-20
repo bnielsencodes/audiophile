@@ -24,3 +24,9 @@
     height: auto;
   }
 }
+
+@media (min-width: 1440px) {
+  .imgContainer {
+    height: 480px;
+  }
+}
