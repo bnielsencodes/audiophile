@@ -22,6 +22,7 @@ export default function PayConfirmModal(props) {
       <div className={styles.payConfirmOverlay}>
         <div
           className={styles.payConfirmBackdrop}
+          onClick={() => props.setShowPayConfirm(false)}
         ></div>
         <div className={styles.container}>
           <div className={styles.checkContainer}>
@@ -92,6 +93,11 @@ export default function PayConfirmModal(props) {
           <Link
             href="/"
             className="back-to-home-link"
+            onClick={() => {
+              setTimeout(() => {
+                cart.deleteAll();
+              }, 500);
+            }}
           >
             <input
               className={`${styles.backToHomeBtn} btn btn--orange btn-text--white`}
