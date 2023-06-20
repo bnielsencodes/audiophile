@@ -32,6 +32,29 @@ export default function Cart(props) {
         ></div>
         <div className={styles.cart}>
           <div className={styles.header}>
+            {productsCount > 0 ? (
+              <>
+                <div>
+                  <p className={styles.totalItems}>
+                    Cart<span>&#40;{productsCount}&#41;</span>
+                  </p>
+                </div>
+                <p
+                  className={styles.removeAll}
+                  onClick={() => cart.deleteAll()}
+                >
+                  Remove all
+                </p>
+              </>
+            ) : (
+              <>
+                <div>
+                  <p className={styles.totalItems}>
+                    Cart<span>&#40;{productsCount}&#41;</span>
+                  </p>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
