@@ -13,3 +13,13 @@
   line-height: 38.25px;
   letter-spacing: 2px;
 }
+
+@media (min-width: 768px) {
+  .header {
+    height: 215px;
+  }
+
+  .heading {
+    font-size: 34px;
+  }
+}
