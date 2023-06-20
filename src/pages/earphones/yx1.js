@@ -2,6 +2,7 @@ import { productsArray } from "@/productsData";
 import Head from "next/head";
 import Navigation from "@/components/navigation/Navigation";
 import ProductHeader from "@/components/header/ProductHeader";
+import ProductDetails from "@/components/product-details/ProductDetails";
 import AlsoLike from "@/components/also-like/AlsoLike";
 import Shop from "@/components/shop/Shop";
 import About from "@/components/about/About";
@@ -21,7 +22,10 @@ export default function YX1() {
       <Navigation />
       <ProductHeader product={product} />
       <main className="main--current-product">
+        <div className="current-product-content">
+          <ProductDetails product={product} />
           <AlsoLike product={product} />
+        </div>
         <Shop />
         <div className="spacer hidden-sm-lg"></div>
         <About />
