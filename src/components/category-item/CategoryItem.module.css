@@ -40,3 +40,9 @@
   font-size: 15px;
   line-height: 25px;
 }
+
+@media (min-width: 425px) {
+  .text {
+    max-width: 560px;
+  }
+}
