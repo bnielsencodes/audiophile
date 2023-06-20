@@ -68,3 +68,17 @@
     margin-bottom: 39px;
   }
 }
+
+@media (min-width: 1024px) {
+  .summary {
+    padding-inline: 32px;
+  }
+
+  .heading {
+    padding-top: 32px;
+  }
+
+  .totalSection {
+    margin-bottom: 32px;
+  }
+}
