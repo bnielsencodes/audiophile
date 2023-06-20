@@ -159,3 +159,9 @@
     transition: color 0.2s linear, transform 0.2s linear;
   }
 }
+
+@media (min-width: 1440px) {
+  .cart {
+    margin-right: 148px;
+  }
+}
