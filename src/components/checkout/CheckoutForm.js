@@ -287,6 +287,16 @@ export default function CheckoutForm(props) {
 
                   <div className={styles.eMoneyContainer}>
                     <div className={styles.eNumberContainer}>
+                      {values.paymentMethod !== "eMoney" ? (
+                        <TextInput
+                          label="e-Money Number"
+                          name="eMoneyNumber"
+                          type="text"
+                          placeholder="238521993"
+                          maxLength={9}
+                          disabled
+                        />
+                      ) : (
                         <TextInput
                           label="e-Money Number"
                           name="eMoneyNumber"
@@ -294,8 +304,19 @@ export default function CheckoutForm(props) {
                           placeholder="238521993"
                           maxLength={9}
                         />
+                      )}
                     </div>
                     <div className={styles.ePinContainer}>
+                      {values.paymentMethod !== "eMoney" ? (
+                        <TextInput
+                          label="e-Money PIN"
+                          name="eMoneyPin"
+                          type="text"
+                          placeholder="6891"
+                          maxLength={4}
+                          disabled
+                        />
+                      ) : (
                         <TextInput
                           label="e-Money PIN"
                           name="eMoneyPin"
@@ -303,6 +324,7 @@ export default function CheckoutForm(props) {
                           placeholder="6891"
                           maxLength={4}
                         />
+                      )}
                     </div>
                   </div>
                 </div>
