@@ -50,6 +50,24 @@ export default function Navigation(props) {
               />
             </div>
           </Link>
+          {/* NAV CART */}
+          <div className={styles.navRight}>
+            <div className={styles.tapRight}>
+              <div className={styles.cartIconContainer}>
+                <Image
+                  className={`${styles.cartIcon}  ${
+                    showCart === true ? styles.cartIconActive : ""
+                  }`}
+                  onClick={() => setShowCart((prevState) => !prevState)}
+                  src="/assets/shared/desktop/icon-cart.svg"
+                  alt="shopping cart icon"
+                  width="0"
+                  height="0"
+                  sizes="100vw"
+                />
+              </div>
+            </div>
+          </div>
         </nav>
         <MobileNavModal showNav={showNav} />
         <CartModal showCart={showCart} setShowCart={setShowCart} />
