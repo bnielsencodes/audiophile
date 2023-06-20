@@ -24,3 +24,11 @@
     margin: 0;
   }
 }
+
+@media (min-width: 1024px) {
+  .link:hover {
+    color: var(--color-accent);
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+  }
+}
