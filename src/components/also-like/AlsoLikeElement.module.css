@@ -31,3 +31,9 @@
     font-size: 24px;
   }
 }
+
+@media (min-width: 1024px) {
+  .heading {
+    margin-bottom: 32px;
+  }
+}
