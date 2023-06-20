@@ -38,11 +38,18 @@ export default function CartItem(props) {
         </div>
         <div className={styles.quantityContainer}>
           <div className={styles.removeContainer}>
+            <p
+              className={styles.removeBtn}
+              onClick={() => cart.removeOneFromCart(id)}
+            >
               &minus;
             </p>
           </div>
           <p className={styles.quantity}>{quantity}</p>
           <div className={styles.addContainer}>
+            <p className={styles.addBtn} onClick={() => cart.addOneToCart(id)}>
+              &#43;
+            </p>
           </div>
         </div>
       </div>
