@@ -64,3 +64,38 @@
     margin-top: 20px;
   }
 }
+
+@media (min-width: 1024px) {
+  .item {
+    flex-direction: row;
+    gap: 80px;
+    margin-bottom: 165px;
+  }
+
+  .imgContainer {
+    flex: 1 1 50%;
+    margin-bottom: 0;
+  }
+
+  .reverseOrder {
+    order: 1;
+  }
+
+  .img {
+    margin-bottom: 0;
+  }
+
+  .bottomContainer {
+    flex: 1 1 50%;
+    text-align: left;
+  }
+
+  .heading {
+    margin: 6px auto 4px 0;
+    text-align: left;
+  }
+
+  .text {
+    margin: 14px 0 22px;
+  }
+}
