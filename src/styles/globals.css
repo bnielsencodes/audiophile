@@ -145,3 +145,11 @@ h1 {
 .btn-text--white {
   color: var(--color-neutral-200);
 }
+
+.hidden,
+.hidden-sm,
+.hidden-sm-md,
+.hidden-sm-lg {
+  display: none;
+}
+
