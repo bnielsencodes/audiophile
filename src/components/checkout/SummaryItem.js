@@ -2,6 +2,7 @@ import { getProductData } from "../../productsData.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import styles from "./SummaryItem.module.css";
 
 export default function SummaryItem(props) {
   const id = props.product.id;
