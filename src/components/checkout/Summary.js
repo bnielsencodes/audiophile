@@ -3,6 +3,7 @@ import { CartContext } from "../../CartContext.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import SummaryItem from "./SummaryItem.js";
+import styles from "./Summary.module.css";
 
 export default function Summary(props) {
   const cart = useContext(CartContext);

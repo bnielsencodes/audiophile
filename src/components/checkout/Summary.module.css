@@ -1,0 +1,56 @@
+.summary {
+  padding: 0 22px 32px;
+  border-radius: 8px;
+  background: var(--color-neutral-100);
+}
+
+.heading {
+  padding: 25px 0 31px;
+  font-size: 18px;
+  line-height: 24.59px;
+  letter-spacing: 1.29px;
+}
+
+.totalSection {
+  margin: 32px 0 32px;
+}
+
+.totalTopContainer {
+  margin-bottom: 24px;
+}
+
+.totalItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.totalItemHeading {
+  margin: 0;
+  color: rgb(0 0 0 / 0.5);
+  text-transform: uppercase;
+}
+
+.grandTotalPriceContainer {
+  color: var(--color-accent);
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  width: 11px;
+  margin: 0.5px 3px 0 0;
+}
+
+.price {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.59px;
+}
