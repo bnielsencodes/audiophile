@@ -10,6 +10,7 @@
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
+- [Author](#author)
 
 ## Overview
 
@@ -18,6 +19,9 @@
 ![screenshot preview of Audiophile website](public/assets/screenshots/preview.jpg)
 
 ### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -53,4 +57,21 @@ Some things I plan on implementing into this project in the near future:
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [CSS Modules by Example](https://www.javascriptstuff.com/css-modules-by-example/)
+- [Prevent Counter from Decrementing Below 0](https://stackoverflow.com/questions/48961319/how-to-stop-decrementing-the-value-if-it-is-less-than-zero-in-reactjs)
+- [Learn useContext in 13 Minutes - Web Dev Simplified](https://www.youtube.com/watch?v=5LrDIWkK_Bc&t=2s)
+- [Build a Shopping Cart With React JS & Stripe - Traversy Media](https://www.youtube.com/watch?v=_8M-YVY76O8)
+- [Change Input Placeholder Text Color in Firefox](https://stackoverflow.com/questions/19621306/css-placeholder-text-color-on-firefox)
+- [Validate Phone Number w/ JavaScript](https://stackoverflow.com/questions/4338267/validate-phone-number-with-javascript)
+- [Add Radio Button in Formik Validations](https://stackoverflow.com/questions/58065376/how-to-add-radio-button-in-formik-validations-reactjs)
+- [Format Numbers w/ Commas](https://sabe.io/blog/javascript-format-numbers-commas)
+- [Formik Docs](https://formik.org/docs)
+- [How to Add a Delay to onClick Function](https://forum.freecodecamp.org/t/how-to-add-a-delay-to-this-onclick-function/282168)
+- [Change Style of Input Field when Error Occurs in Formik](https://stackoverflow.com/questions/62256709/change-style-of-existing-input-fields-whenever-error-occurs-in-react-formik/66395574#66395574)
+
+## Author
+
+- Website - [Brandon Nielsen](https://www.bnielsen.dev)
+- LinkedIn - [Brandon Nielsen](https://www.linkedin.com/in/bnielsencodes)
+- Twitter - [@bnielsencodes](https://twitter.com/bnielsencodes)
+- Frontend Mentor - [@bnielsencodes](https://www.frontendmentor.io/profile/bnielsencodes)
