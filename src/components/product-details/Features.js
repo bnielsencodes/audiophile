@@ -1,4 +1,5 @@
 import InTheBox from "./InTheBox";
+import styles from "./Features.module.css";
 
 export default function Features(props) {
   const inTheBox = props.product.includes.map((item) => {

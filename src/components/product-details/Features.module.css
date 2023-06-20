@@ -1,0 +1,31 @@
+.text h5 {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.86px;
+}
+
+.text p {
+  margin-top: 24px;
+  color: rgb(0 0 0 / 0.5);
+  font-size: 15px;
+  line-height: 25px;
+  white-space: pre-wrap;
+}
+
+.inTheBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 75px 0 72px;
+}
+
+.inTheBox h5 {
+  font-size: 24px;
+  letter-spacing: 0.86px;
+}
+
+.list {
+  padding-left: 0;
+  margin-top: 24px;
+}
