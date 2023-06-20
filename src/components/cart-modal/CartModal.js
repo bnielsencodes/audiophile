@@ -56,6 +56,33 @@ export default function Cart(props) {
               </>
             )}
           </div>
+          {productsCount > 0 ? (
+            <>
+              <div>{cartItems}</div>
+              {/* <!-- CART TOTAL --> */}
+              <div className={styles.total}>
+                <p className={styles.totalText}>Total</p>
+                <div className={styles.totalPrice}>
+                  <div className={styles.totalIconContainer}>
+                    <FontAwesomeIcon icon={faDollarSign} />
+                  </div>
+                  <p>{cart.getTotalCost(0)}</p>
+                </div>
+              </div>
+              {/* <!-- GO TO CHECKOUT BUTTON --> */}
+              <Link href="/checkout" className="checkout-submit-link">
+                <input
+                  className={`${styles.checkoutBtn} btn btn--orange btn-text--white`}
+                  type="button"
+                  value="Checkout"
+                />
+              </Link>
+            </>
+          ) : (
+            <>
+              <h2 className={styles.emptyCart}>Your cart is empty</h2>
+            </>
+          )}
         </div>
       </div>
     </>
