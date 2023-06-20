@@ -1,8 +1,13 @@
+import { getProductData } from "../../productsData.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export default function SummaryItem(props) {
+  const id = props.product.id;
+  const quantity = props.product.quantity;
+  const productData = getProductData(id);
+
   return (
     <>
       <div className={styles.item}>
