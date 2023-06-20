@@ -78,3 +78,36 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 0 120px 20px;
+  }
+
+  .footerLg {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .logoContainer {
+    margin: 0;
+  }
+
+  .logo:hover {
+    filter: brightness(0%) saturate(100%) invert(82%) sepia(47%) saturate(4886%)
+      hue-rotate(327deg) brightness(90%) contrast(86%);
+  }
+
+  .text {
+    width: 550px;
+    margin: 16px 0 56px;
+  }
+
+  .footerMdBottom {
+    position: relative;
+    margin-bottom: 28px;
+  }
+}
