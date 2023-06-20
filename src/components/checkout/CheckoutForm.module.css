@@ -152,3 +152,71 @@
   color: #cd2c2c;
   font-size: 13px;
 }
+
+@media (min-width: 768px) {
+  .checkoutForm {
+    padding: 30px 28px 0;
+  }
+
+  .formHeading {
+    margin-bottom: 42px;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14px;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 34px;
+  }
+
+  .nameEmailContainer,
+  .zipCityContainer,
+  .paymentMethodContainer,
+  .eMoneyContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nameEmailContainer,
+  .zipCityContainer,
+  .paymentMethodContainer,
+  .eMoneyContainer {
+    gap: 16px;
+  }
+
+  .phoneContainer,
+  .countryContainer,
+  .nameContainer,
+  .emailContainer,
+  .phoneContainer,
+  .zipContainer,
+  .cityContainer,
+  .countryContainer,
+  .radioGroupLabel,
+  .radioGroup,
+  .eNumberContainer,
+  .ePinContainer {
+    flex: 1 1 0px;
+    width: 0;
+  }
+
+  .phoneContainer,
+  .countryContainer {
+    flex: 1 1 0px;
+    width: calc(50% - 8px);
+  }
+
+  .paymentMethodHeading {
+    margin-top: 8px;
+  }
+
+  .radioGroup {
+    margin-bottom: 3px;
+  }
+
+  .errorRadio {
+    top: -28px;
+  }
+}
