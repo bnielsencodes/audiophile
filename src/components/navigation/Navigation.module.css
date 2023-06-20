@@ -149,3 +149,9 @@
     cursor: pointer;
   }
 }
+
+@media (min-width: 1440px) {
+  .nav {
+    width: calc(100vw - 330px);
+  }
+}
