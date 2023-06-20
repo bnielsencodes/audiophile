@@ -154,3 +154,36 @@
     transition: color 0.2s linear, transform 0.2s linear;
   }
 }
+
+@media (min-width: 1440px) {
+  .container {
+    gap: 125.5px;
+    margin-bottom: 177px;
+  }
+
+  .imgContainer {
+    flex: 1 1 63%;
+    margin-bottom: 25px;
+  }
+
+  .heading {
+    width: 295px;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.43px;
+  }
+
+  .text {
+    width: 445px;
+    margin: 20px 0 33px;
+  }
+
+  .priceContainer {
+    margin-bottom: 31px;
+    font-size: 18px;
+  }
+
+  .quantityContainer {
+    margin-right: 16px;
+  }
+}
