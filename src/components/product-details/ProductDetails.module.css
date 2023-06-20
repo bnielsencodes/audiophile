@@ -78,3 +78,45 @@
 .quantity {
   font-weight: 700;
 }
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 83px;
+  }
+
+  .imgContainer {
+    flex: 1 1 48%;
+    width: 0;
+  }
+
+  .innerContainer {
+    flex: 1 1 52%;
+    width: 0;
+    margin-bottom: 35px;
+  }
+
+  .heading {
+    margin-top: 17px;
+    line-height: 32px;
+  }
+
+  .text {
+    margin: 31px 0 33px;
+    line-height: 25px;
+  }
+
+  .priceContainer {
+    margin-bottom: 31px;
+  }
+
+  .addToCart {
+    justify-content: flex-start;
+  }
+
+  .quantityContainer {
+    margin: 0 12px 0 0;
+  }
+}
