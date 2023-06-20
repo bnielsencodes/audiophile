@@ -220,3 +220,40 @@
     top: -28px;
   }
 }
+
+@media (min-width: 1024px) {
+  .formContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .checkoutForm {
+    flex: 1 1 67.5%;
+    padding: 54px 48px 0;
+    margin-bottom: 0;
+  }
+
+  .section:last-of-type {
+    margin-bottom: 17px;
+  }
+
+  .radio:hover,
+  .checkoutPaymentLabel:hover {
+    cursor: pointer;
+  }
+
+  .radio:hover {
+    border: 1px solid var(--color-accent);
+  }
+
+  .eMoney:hover,
+  .cashOnDelivery:hover {
+    cursor: pointer;
+  }
+
+  .summary {
+    flex: 1 1 32.5%;
+  }
+}
