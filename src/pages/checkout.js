@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import Navigation from "@/components/navigation/Navigation";
+import PayConfirmModal from "@/components/checkout/PayConfirmModal";
 import Footer from "@/components/footer/Footer";
 
 export default function Checkout() {
@@ -13,6 +14,8 @@ export default function Checkout() {
         <link rel="icon" href="/assets/favicon.ico" />
       </Head>
       <Navigation />
+      <PayConfirmModal
+      />
       <header className={styles.header}>
         <Link className={styles.headerLink} href="/">
           Go Back
