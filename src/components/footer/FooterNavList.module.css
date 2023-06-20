@@ -16,3 +16,11 @@
   text-transform: uppercase;
 }
 
+@media (min-width: 768px) {
+  .list {
+    display: flex;
+    justify-content: space-between;
+    width: 424px;
+    margin: 0;
+  }
+}
