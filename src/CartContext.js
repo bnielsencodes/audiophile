@@ -78,6 +78,12 @@ export function CartProvider({ children }) {
       })
     );
   }
+
+  function deleteAll() {
+    setCartProducts(() => {
+      return [];
+    });
+  }
   const contextValue = {
     items: cartProducts,
     getProductQuantity,
