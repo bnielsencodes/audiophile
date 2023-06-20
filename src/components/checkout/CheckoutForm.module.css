@@ -1,0 +1,154 @@
+.checkoutForm {
+  padding: 35px 24px 1px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  background: var(--color-neutral-100);
+}
+
+.formHeading {
+  margin-bottom: 34px;
+  color: var(--color-neutral-500);
+  font-size: 28px;
+  line-height: 38.25px;
+  letter-spacing: 1px;
+}
+
+.section {
+  margin-bottom: 13px;
+}
+
+.sectionHeading {
+  margin-bottom: 11px;
+  color: var(--color-accent);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.93px;
+  text-transform: uppercase;
+}
+
+.nameContainer,
+.emailContainer,
+.phoneContainer,
+.addressContainer,
+.zipContainer,
+.cityContainer,
+.countryContainer,
+.radioGroup,
+.eNumberContainer,
+.ePinContainer {
+  position: relative;
+}
+
+.label,
+.radioGroupLabel {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16.39px;
+  letter-spacing: -0.21px;
+}
+
+.paymentMethodContainer {
+  padding: 0;
+  border: 0;
+}
+
+.radioGroupLabel {
+  margin-bottom: 1px;
+}
+
+.radioGroup {
+  margin: 13px 0 27px;
+}
+
+.radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  padding-left: 24px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.radio p {
+  margin: 0;
+  padding-left: 27px;
+}
+
+.eMoney,
+.cashOnDelivery {
+  position: absolute;
+  z-index: 2;
+  width: 18px;
+  height: 18px;
+  border: 0;
+  opacity: 0;
+}
+
+.unchecked {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #cfcfcf;
+  border-radius: 15px;
+  visibility: visible;
+}
+
+.checked {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--color-accent);
+  border-radius: 15px;
+  background: var(--color-accent);
+  visibility: visible;
+}
+
+.radioBorder {
+  border: 1px solid var(--color-accent);
+}
+
+.ePinContainer {
+  margin-bottom: 12px;
+}
+
+.submitForm {
+  width: 100%;
+}
+
+.labelInvalid {
+  color: #cd2c2c;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16.39px;
+  letter-spacing: -0.21px;
+}
+
+.error {
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  color: #cd2c2c;
+  font-size: 12px;
+  line-height: 16.39px;
+  letter-spacing: -0.21px;
+}
+
+.errorRadio {
+  position: absolute;
+  top: 128px;
+  right: 0;
+  color: #cd2c2c;
+  font-size: 13px;
+}
