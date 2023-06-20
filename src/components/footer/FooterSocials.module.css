@@ -10,3 +10,14 @@
 .link svg {
   fill: var(--color-neutral-100);
 }
+
+@media (min-width: 768px) {
+  .socials,
+  .socials li {
+    height: 24px;
+  }
+
+  .socials {
+    margin: 0;
+  }
+}
