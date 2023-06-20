@@ -6,6 +6,7 @@ import FeaturedZX9 from "@/components/featured-products/FeaturedZX9";
 import FeaturedZX7 from "@/components/featured-products/FeaturedZX7";
 import FeaturedYX1 from "@/components/featured-products/FeaturedYX1";
 import About from "@/components/about/About";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         </div>
         <About />
       </main>
+      <Footer />
     </>
   );
 }
