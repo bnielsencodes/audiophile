@@ -25,3 +25,16 @@
     margin: 12px 0 7px;
   }
 }
+
+@media (min-width: 1024px) {
+  .header {
+    height: 120px;
+    padding: 0 120px;
+  }
+
+  .link:hover {
+    color: var(--color-accent);
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+  }
+}
