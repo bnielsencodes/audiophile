@@ -6,6 +6,7 @@ import styles from "./Navigation.module.css";
 
 export default function Navigation(props) {
   const [showNav, setShowNav] = useState(false);
+  const [showCart, setShowCart] = useState(false);
 
   return (
     <>
