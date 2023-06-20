@@ -2,11 +2,16 @@ import { productsArray } from "@/productsData";
 import Head from "next/head";
 import Navigation from "@/components/navigation/Navigation";
 import CategoryHeader from "@/components/header/CategoryHeader";
+import CategoryItem from "@/components/category-item/CategoryItem";
 import Shop from "@/components/shop/Shop";
 import About from "@/components/about/About";
 import Footer from "@/components/footer/Footer";
 
 export default function Speakers() {
+  const speakers = productsArray.slice(3, 5).map((product) => {
+    return <CategoryItem key={product.id} item={product} />;
+  });
+
   return (
     <>
       <Head>
@@ -18,6 +23,7 @@ export default function Speakers() {
       <Navigation />
       <CategoryHeader category={`Speakers`} />
       <main id="main--products" className="main">
+        <div className="category-items">{speakers}</div>
         <div className="spacer-top hidden-sm-md"></div>
         <Shop />
         <div className="spacer hidden-sm-lg"></div>
