@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import styles from "./CartModal.module.css";
 
 export default function Cart(props) {
   return (
