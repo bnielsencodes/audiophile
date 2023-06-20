@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import Features from "./Features";
+import ImgGallery from "./ImgGallery";
 export default function ProductDetails(props) {
   const product = props.product;
 
@@ -29,6 +30,7 @@ export default function ProductDetails(props) {
         </div>
       </section>
       <Features product={product} />
+      <ImgGallery product={product} />
     </>
   );
 }
