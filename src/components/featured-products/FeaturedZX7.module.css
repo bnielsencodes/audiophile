@@ -34,3 +34,14 @@
   line-height: 17.76px;
   letter-spacing: 1px;
 }
+
+@media (min-width: 768px) {
+  .zx7 {
+    margin-bottom: 32px;
+    filter: brightness(0.94);
+  }
+
+  .inner {
+    left: 64px;
+  }
+}
