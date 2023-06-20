@@ -12,6 +12,11 @@ export default function PayConfirmModal(props) {
   const id = cart.items[0].id;
   const productData = getProductData(id);
 
+  // CONDITIONALLY SHOW PayConfirm MODAL WHEN CART ICON IS CLICKED
+  if (!props.showPayConfirm) {
+    return null;
+  }
+
   return (
     <>
       <div className={styles.payConfirmOverlay}>
