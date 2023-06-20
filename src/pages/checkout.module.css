@@ -33,3 +33,20 @@
     padding: 0 40px 116px;
   }
 }
+
+@media (min-width: 1024px) {
+  .header {
+    height: 142px;
+    padding-left: 165px;
+  }
+
+  .headerLink:hover {
+    color: var(--color-accent);
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+  }
+
+  .main {
+    padding: 0 165px 141px;
+  }
+}
