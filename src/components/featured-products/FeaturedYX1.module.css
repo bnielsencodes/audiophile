@@ -83,3 +83,27 @@
     height: 46px;
   }
 }
+
+@media (min-width: 1024px) {
+  .yx1 {
+    margin-left: 50px;
+  }
+
+  .container {
+    gap: 15px;
+    min-height: 241px;
+    margin-bottom: 180px;
+  }
+
+  .imgContainer {
+    height: auto;
+  }
+
+  .img {
+    min-height: 241px;
+  }
+
+  .container2 {
+    height: auto;
+  }
+}
