@@ -308,3 +308,31 @@ h1 {
     margin-bottom: 10px;
   }
 }
+
+@media (min-width: 1440px) {
+  .main {
+    padding-inline: 165px;
+    padding: 0 160px;
+    margin-top: 199px;
+  }
+
+  .main--current-product {
+    padding-inline: 165px;
+  }
+
+  header {
+    height: 560px;
+    padding: 0 160px;
+    overflow-x: hidden;
+  }
+
+  .overline--current-product {
+    margin-bottom: 13px;
+  }
+
+  #overline--small-text {
+    font-size: 14px;
+    line-height: 19.12px;
+    letter-spacing: 10px;
+  }
+}
