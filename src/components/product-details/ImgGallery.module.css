@@ -42,3 +42,14 @@
     height: 100%;
   }
 }
+
+@media (min-width: 1024px) {
+  .container {
+    gap: 22px;
+    margin-bottom: 120px;
+  }
+
+  .inner {
+    gap: 24px;
+  }
+}
