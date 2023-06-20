@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import FooterNavList from "./FooterNavList";
+import FooterSocials from "./FooterSocials";
 
 export default function Footer() {
   return (
@@ -21,6 +23,7 @@ export default function Footer() {
                 />
               </div>
             </Link>
+            <FooterNavList />
           </div>
           {/* FOOTER TEXT */}
           <p className={styles.text}>
@@ -35,6 +38,7 @@ export default function Footer() {
           <small className={styles.copy}>
             Copyright 2023. All Rights Reserved
           </small>
+          <FooterSocials />
         </div>
       </footer>
     </>
