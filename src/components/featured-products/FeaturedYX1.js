@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./FeaturedYX1.module.css";
 
 export default function FeaturedYX1() {
   return (
