@@ -25,6 +25,18 @@ const TextInput = ({ label, ...props }) => {
     </>
   );
 };
+
+const SubmitBtn = ({ ...props }) => {
+  const [field] = useField(props);
+  return (
+    <input
+      className={`${styles.submitForm} btn btn--orange btn-text--white btn--submit`}
+      {...field}
+      {...props}
+    />
+  );
+};
+
 export default function CheckoutForm(props) {
   return (
     <>
