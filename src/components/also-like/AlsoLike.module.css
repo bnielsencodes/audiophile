@@ -11,3 +11,25 @@
 .container {
   margin: 39px auto 171px;
 }
+
+@media (min-width: 768px) {
+  .alsoLike {
+    height: 563px;
+    margin-bottom: 172px;
+  }
+
+  .heading {
+    margin-bottom: 31px;
+    font-size: 32px;
+    letter-spacing: 1.14px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    width: 100%;
+    margin: 0 0 115px;
+  }
+}
