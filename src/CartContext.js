@@ -84,6 +84,15 @@ export function CartProvider({ children }) {
       return [];
     });
   }
+
+  function getTotalCost(shippingCost) {
+    let totalCost = 0;
+    cartProducts.map((cartItem) => {
+      const productData = getProductData(cartItem.id);
+      totalCost += productData.price * cartItem.quantity;
+    });
+    return (totalCost + shippingCost).toLocaleString("en-US");
+  }
   const contextValue = {
     items: cartProducts,
     getProductQuantity,
