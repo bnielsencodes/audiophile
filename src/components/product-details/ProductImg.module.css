@@ -17,3 +17,10 @@
     margin-bottom: 38px;
   }
 }
+
+@media (min-width: 1024px) {
+  .imgContainer {
+    width: 100%;
+    height: auto;
+  }
+}
