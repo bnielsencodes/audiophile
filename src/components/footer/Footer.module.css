@@ -111,3 +111,9 @@
     margin-bottom: 28px;
   }
 }
+
+@media (min-width: 1440px) {
+  .footer {
+    padding-inline: 160px;
+  }
+}
