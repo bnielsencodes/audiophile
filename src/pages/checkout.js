@@ -3,6 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Navigation from "@/components/navigation/Navigation";
 import PayConfirmModal from "@/components/checkout/PayConfirmModal";
+import CheckoutForm from "@/components/checkout/CheckoutForm";
 import Footer from "@/components/footer/Footer";
 import styles from "./checkout.module.css";
 
@@ -28,6 +29,10 @@ export default function Checkout() {
         </Link>
       </header>
       <main className={styles.main}>
+        <CheckoutForm
+          showPayConfirm={showPayConfirm}
+          setShowPayConfirm={setShowPayConfirm}
+        />
       </main>
       <Footer />
     </>
