@@ -71,6 +71,49 @@ export default function CheckoutForm(props) {
           eMoneyNumber: "",
           eMoneyPin: "",
         }}
+        validationSchema={Yup.object({
+          name: Yup.string()
+            .matches(nameRegEx, "Wrong format")
+            .max(70, "Must be 70 characters or less")
+            .required("Required"),
+          email: Yup.string().email("Wrong format").required("Required"),
+          phone: Yup.string()
+            .matches(phoneRegEx, "Wrong format")
+            .required("Required"),
+          address: Yup.string()
+            .matches(addressRegEx, "Wrong format")
+            .required("Required"),
+          zip: Yup.string()
+            .matches(numRegEx, "Must be a number")
+            .min(5, "Must be 5 characters")
+            .required("Required"),
+          city: Yup.string()
+            .matches(cityRegEx, "Wrong format")
+            .required("Required"),
+          country: Yup.string()
+            .matches(countryRegEx, "Wrong format")
+            .required("Required"),
+          paymentMethodChosen: Yup.string().when("paymentMethod", {
+            is: (method) => method === undefined,
+            then: () => Yup.string().required("A payment method is required"),
+          }),
+          eMoneyNumber: Yup.string().when("paymentMethod", {
+            is: "eMoney",
+            then: () =>
+              Yup.string()
+                .matches(numRegEx, "Must be a number")
+                .min(9, "Must be 9 characters")
+                .required("Required"),
+          }),
+          eMoneyPin: Yup.string().when("paymentMethod", {
+            is: "eMoney",
+            then: () =>
+              Yup.string()
+                .matches(numRegEx, "Must be a number")
+                .min(4, "Must be 4 characters")
+                .required("Required"),
+          }),
+        })}
       >
         {({ values }) => (
           <Form>
