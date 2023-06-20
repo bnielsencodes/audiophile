@@ -9,3 +9,11 @@
   border-radius: 8px;
   margin-bottom: 8px;
 }
+
+@media (min-width: 768px) {
+  .imgContainer {
+    width: 282px;
+    height: 480px;
+    margin-bottom: 38px;
+  }
+}
