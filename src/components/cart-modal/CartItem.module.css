@@ -90,3 +90,9 @@
 .quantity {
   font-weight: 700;
 }
+
+@media (min-width: 768px) {
+  .item {
+    margin-bottom: 30px;
+  }
+}
