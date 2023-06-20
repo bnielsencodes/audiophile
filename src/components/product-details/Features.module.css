@@ -103,3 +103,14 @@
     margin-inline: 0;
   }
 }
+
+@media (min-width: 1440px) {
+  .container {
+    gap: 120px;
+    margin-bottom: 140px;
+  }
+
+  .text p {
+    width: 632px;
+  }
+}
