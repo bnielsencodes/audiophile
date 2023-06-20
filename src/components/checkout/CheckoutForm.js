@@ -130,25 +130,73 @@ export default function CheckoutForm(props) {
                   <h2 className={styles.sectionHeading}>Billing Details</h2>
                   <div className={styles.nameEmailContainer}>
                     <div className={styles.nameContainer}>
+                      <TextInput
+                        label="Name"
+                        name="name"
+                        type="text"
+                        placeholder="Alexei Ward"
+                        maxLength={70}
+                      />
                     </div>
                     <div className={styles.emailContainer}>
+                      <TextInput
+                        label="Email Address"
+                        name="email"
+                        type="email"
+                        placeholder="alexei@mail.com"
+                      />
                     </div>
                   </div>
                   <div className={styles.phoneContainer}>
+                    <TextInput
+                      label="Phone Number"
+                      name="phone"
+                      type="text"
+                      placeholder="+1 202-555-0136"
+                      maxLength={14}
+                    />
                   </div>
                 </div>
 
                 <div className={styles.section}>
                   <h2 className={styles.sectionHeading}>Shipping Info</h2>
                   <div className={styles.addressContainer}>
+                    <TextInput
+                      label="Your Address"
+                      name="address"
+                      type="text"
+                      placeholder="1137 Williams Avenue"
+                      maxLength={50}
+                    />
                   </div>
                   <div className={styles.zipCityContainer}>
                     <div className={styles.zipContainer}>
+                      <TextInput
+                        label="ZIP Code"
+                        name="zip"
+                        type="text"
+                        placeholder="10001"
+                        maxLength={5}
+                      />
                     </div>
                     <div className={styles.cityContainer}>
+                      <TextInput
+                        label="City"
+                        name="city"
+                        type="text"
+                        placeholder="New York"
+                        maxLength={28}
+                      />
                     </div>
                   </div>
                   <div className={styles.countryContainer}>
+                    <TextInput
+                      label="Country"
+                      name="country"
+                      type="text"
+                      placeholder="United States"
+                      maxLength={56}
+                    />
                   </div>
                 </div>
 
@@ -163,8 +211,22 @@ export default function CheckoutForm(props) {
 
                   <div className={styles.eMoneyContainer}>
                     <div className={styles.eNumberContainer}>
+                        <TextInput
+                          label="e-Money Number"
+                          name="eMoneyNumber"
+                          type="text"
+                          placeholder="238521993"
+                          maxLength={9}
+                        />
                     </div>
                     <div className={styles.ePinContainer}>
+                        <TextInput
+                          label="e-Money PIN"
+                          name="eMoneyPin"
+                          type="text"
+                          placeholder="6891"
+                          maxLength={4}
+                        />
                     </div>
                   </div>
                 </div>
