@@ -1,0 +1,20 @@
+.header,
+.main {
+  background-color: var(--color-neutral-200);
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 65px;
+  padding-inline: 24px;
+}
+
+.headerLink {
+  color: rgb(0 0 0 / 0.5);
+}
+
+.main {
+  padding: 0 24px 97px;
+}

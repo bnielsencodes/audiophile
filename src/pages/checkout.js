@@ -1,8 +1,10 @@
+import { useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
 import Navigation from "@/components/navigation/Navigation";
 import PayConfirmModal from "@/components/checkout/PayConfirmModal";
 import Footer from "@/components/footer/Footer";
+import styles from "./checkout.module.css";
 
 export default function Checkout() {
   const [showPayConfirm, setShowPayConfirm] = useState(false);
