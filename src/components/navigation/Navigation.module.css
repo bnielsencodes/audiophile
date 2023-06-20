@@ -82,3 +82,27 @@
 .badge span {
   font-size: 0.65rem;
 }
+
+@media (min-width: 768px) {
+  .navContainer {
+    width: 100%;
+  }
+
+  .nav {
+    width: calc(100vw - 78px);
+    padding: 6px 0 0;
+    margin: 0 auto;
+  }
+
+  .logoContainer {
+    margin-left: 14px;
+  }
+
+  .navRight {
+    margin-left: auto;
+  }
+
+  .tapRight {
+    margin-left: auto;
+  }
+}
