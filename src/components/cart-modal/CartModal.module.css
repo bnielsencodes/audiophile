@@ -105,3 +105,13 @@
 .checkoutBtn {
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  .cart {
+    top: 24px;
+    right: 40px;
+    width: 378px;
+    padding: 38px 30px 31px 33px;
+    margin: 0 0 0 auto;
+  }
+}
