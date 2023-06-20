@@ -50,6 +50,23 @@ export function CartProvider({ children }) {
       );
     }
   }
+
+  function removeOneFromCart(id) {
+    const quantity = getProductQuantity(id);
+
+    if (quantity == 1) {
+      deleteFromCart(id);
+    } else {
+      setCartProducts(
+        cartProducts.map(
+          (product) =>
+            product.id === id // if condition
+              ? { ...product, quantity: product.quantity - 1 } // if statement is true
+              : product // if statement is false
+        )
+      );
+    }
+  }
   const contextValue = {
     items: cartProducts,
     getProductQuantity,
