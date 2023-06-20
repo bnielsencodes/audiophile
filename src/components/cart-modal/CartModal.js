@@ -14,6 +14,11 @@ export default function Cart(props) {
     0
   );
 
+  // CONDITIONALLY SHOW CART MODAL WHEN CART ICON IS CLICKED
+  if (!props.showCart) {
+    return null;
+  }
+
   const cartItems = cart.items.map((product) => {
     return <CartItem key={product.id} product={product} />;
   });
