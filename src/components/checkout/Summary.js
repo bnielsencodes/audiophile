@@ -1,7 +1,16 @@
+import { useContext } from "react";
+import { CartContext } from "../../CartContext.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 
 export default function Summary(props) {
+  const cart = useContext(CartContext);
+  // get quantity of total items in cart
+  const productsCount = cart.items.reduce(
+    (sum, product) => sum + product.quantity,
+    0
+  );
+
   return (
     <>
       <div className={styles.summary}>
