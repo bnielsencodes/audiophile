@@ -93,6 +93,17 @@ export function CartProvider({ children }) {
     });
     return (totalCost + shippingCost).toLocaleString("en-US");
   }
+
+  function getVAT() {
+    let totalCost = 0;
+    cartProducts.map((cartItem) => {
+      const productData = getProductData(cartItem.id);
+      totalCost += productData.price * cartItem.quantity;
+    });
+    totalCost = totalCost * 0.2;
+    return Math.floor(totalCost);
+  }
+
   const contextValue = {
     items: cartProducts,
     getProductQuantity,
