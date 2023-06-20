@@ -11,3 +11,9 @@
   margin-right: 19px;
   color: var(--color-accent);
 }
+
+@media (min-width: 1440px) {
+  .item {
+    margin-bottom: 5px;
+  }
+}
