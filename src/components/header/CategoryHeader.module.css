@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  height: 102px;
+}
+
+.heading {
+  color: var(--color-neutral-200);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.25px;
+  letter-spacing: 2px;
+}

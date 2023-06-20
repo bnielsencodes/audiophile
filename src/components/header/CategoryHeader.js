@@ -1,3 +1,5 @@
+import styles from "./CategoryHeader.module.css";
+
 export default function CategoryHeader(props) {
   return (
     <>
