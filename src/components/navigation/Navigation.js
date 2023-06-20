@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import NavList from "./NavList";
 import MobileNavModal from "@/components/navigation/MobileNavModal.js";
+import CartModal from "@/components/cart-modal/CartModal";
 import styles from "./Navigation.module.css";
 
 export default function Navigation(props) {
@@ -51,6 +52,7 @@ export default function Navigation(props) {
           </Link>
         </nav>
         <MobileNavModal showNav={showNav} />
+        <CartModal showCart={showCart} setShowCart={setShowCart} />
       </div>
     </>
   );
