@@ -1,4 +1,5 @@
 import AlsoLikeElement from "@/components/also-like/AlsoLikeElement";
+import styles from "./AlsoLike.module.css";
 
 export default function AlsoLike(props) {
   const alsoLikeElements = props.product.others.map((item) => {
