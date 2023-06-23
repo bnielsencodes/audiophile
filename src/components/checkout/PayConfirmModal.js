@@ -10,7 +10,7 @@ import styles from "./PayConfirmModal.module.css";
 
 export default function PayConfirmModal(props) {
   const cart = useContext(CartContext);
-  const id = cart.items.length > 0 ? cart.items[0].id : 1;
+  const id = cart.items.length > 0 ? cart.items[0].id : 0;
   const productData = getProductData(id);
 
   // CONDITIONALLY SHOW PayConfirm MODAL WHEN CART ICON IS CLICKED
