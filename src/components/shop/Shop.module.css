@@ -112,6 +112,10 @@
 }
 
 @media (min-width: 1024px) {
+  .section {
+    gap: 20px;
+  }
+
   /* HOVER BOB EFFECT FROM HOVER.CSS */
   .hvrBob {
     box-shadow: 0 0 1px rgb(0 0 0 / 0);
