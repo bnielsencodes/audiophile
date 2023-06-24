@@ -1,7 +1,5 @@
 import { useContext } from "react";
 import { CartContext } from "../../CartContext.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import CartItem from "./CartItem.js";
 import Link from "next/link";
 import styles from "./CartModal.module.css";
@@ -62,12 +60,10 @@ export default function Cart(props) {
               {/* <!-- CART TOTAL --> */}
               <div className={styles.total}>
                 <p className={styles.totalText}>Total</p>
-                <div className={styles.totalPrice}>
-                  <div className={styles.totalIconContainer}>
-                    <FontAwesomeIcon icon={faDollarSign} />
-                  </div>
-                  <p>{cart.getTotalCost(0)}</p>
-                </div>
+                <p className={styles.totalPrice}>
+                  <span>$</span>
+                  {cart.getTotalCost(0)}
+                </p>
               </div>
               {/* <!-- GO TO CHECKOUT BUTTON --> */}
               <Link href="/checkout" className="checkout-submit-link">

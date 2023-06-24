@@ -80,10 +80,6 @@
   text-transform: uppercase;
 }
 
-.totalPrice {
-  display: flex;
-}
-
 .totalIconContainer {
   display: flex;
   align-items: center;
@@ -95,11 +91,15 @@
   padding-right: 0;
 }
 
-.totalPrice p {
+.totalPrice {
   margin: 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 24.59px;
+}
+
+.totalPrice span {
+  margin-right: 4px;
 }
 
 .checkoutBtn {
