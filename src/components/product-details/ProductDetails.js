@@ -1,7 +1,5 @@
 import { useContext } from "react";
 import { CartContext } from "../../CartContext.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import ProductImg from "./ProductImg";
 import Features from "./Features";
 import ImgGallery from "./ImgGallery";
@@ -29,12 +27,10 @@ export default function ProductDetails(props) {
           )}
           <h2 className={styles.heading}>{product.name}</h2>
           <p className={styles.text}>{product.description}</p>
-          <div className={styles.priceContainer}>
-            <div className={styles.iconContainer}>
-              <FontAwesomeIcon icon={faDollarSign} />
-            </div>
-            <div className="price">{props.product.priceString}</div>
-          </div>
+          <p className={styles.price}>
+            <span>$</span>
+            {props.product.priceString}
+          </p>
           <div className={styles.addToCart}>
             {productQuantity > 0 ? (
               <>

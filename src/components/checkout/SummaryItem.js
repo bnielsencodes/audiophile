@@ -27,12 +27,10 @@ export default function SummaryItem(props) {
             <h6>{productData.shortName}</h6>
             <p className={styles.quantity}>x{quantity}</p>
           </div>
-          <div className={styles.priceContainer}>
-            <div className={styles.iconContainer}>
-              <FontAwesomeIcon icon={faDollarSign} />
-            </div>
-            <p>{productData.price}</p>
-          </div>
+          <p className={styles.price}>
+            <span>$</span>
+            {productData.price}
+          </p>
         </div>
       </div>
     </>

@@ -29,7 +29,7 @@
 }
 
 .productDetails h6,
-.priceContainer {
+.price {
   font-weight: 700;
   line-height: 25px;
 }
@@ -38,22 +38,14 @@
   font-size: 15px;
 }
 
-.priceContainer {
-  display: flex;
-  align-items: center;
+.price {
+  margin: 0;
   color: rgba(5, 5, 5, 0.5);
   font-size: 14px;
 }
 
-.priceContainer p {
-  margin: 0;
-}
-
-.iconContainer {
-  display: flex;
-  align-items: center;
-  width: 8.75px;
-  margin: 1px 3px 0 0;
+.price span {
+  margin-right: 3px;
 }
 
 .quantityContainer {

@@ -1,8 +1,6 @@
 import { useContext } from "react";
 import { CartContext } from "../../CartContext.js";
 import { getProductData } from "../../productsData.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import checkIcon from "/public/assets/checkout/icon-order-confirmation.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -67,12 +65,10 @@ export default function PayConfirmModal(props) {
                         x{cart.items[0].quantity}
                       </p>
                     </div>
-                    <div className={styles.priceContainer}>
-                      <div className={styles.iconContainer}>
-                        <FontAwesomeIcon icon={faDollarSign} />
-                      </div>
-                      <p>{productData.price.toLocaleString("en-US")}</p>
-                    </div>
+                    <p className={styles.price}>
+                      <span>$</span>
+                      {productData.price.toLocaleString("en-US")}
+                    </p>
                   </div>
                 </div>
                 <p className={styles.other}>
@@ -82,12 +78,10 @@ export default function PayConfirmModal(props) {
             </div>
             <div className={styles.totalContainer}>
               <p className={styles.totalText}>Grand Total</p>
-              <div className={styles.totalPriceContainer}>
-                <div className={styles.totalIconContainer}>
-                  <FontAwesomeIcon icon={faDollarSign} />
-                </div>
-                <p>{cart.getTotalCost(50)}</p>
-              </div>
+              <p className={styles.totalPrice}>
+                <span>$</span>
+                {cart.getTotalCost(50)}
+              </p>
             </div>
           </div>
           {/* <!-- BACK TO HOME BUTTON --> */}

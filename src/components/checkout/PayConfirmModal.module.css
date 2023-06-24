@@ -102,23 +102,14 @@
   color: rgba(5, 5, 5, 0.5);
 }
 
-.priceContainer {
-  display: flex;
-  align-items: center;
-  color: rgba(5, 5, 5, 0.5);
+.price {
+  margin: 0;
+  color: rgb(0 0 0 / 0.5);
   font-size: 14px;
 }
 
-.iconContainer {
-  display: flex;
-  align-items: center;
-  width: 8.5px;
-  margin: 0 3px 0 0;
-}
-
-.priceContainer p {
-  margin: 0;
-  color: rgb(0 0 0 / 0.5);
+.price span {
+  margin-right: 3px;
 }
 
 .other {
@@ -133,6 +124,9 @@
 }
 
 .totalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 15px 24px 19px;
   border-radius: 0 0 8px 8px;
   background: var(--color-neutral-400);
@@ -145,23 +139,15 @@
   text-transform: uppercase;
 }
 
-.totalPriceContainer {
-  display: flex;
-  align-items: center;
+.totalPrice {
+  margin: 0;
   color: var(--color-neutral-100);
   font-size: 18px;
   line-height: 24.59px;
 }
 
-.totalIconContainer {
-  display: flex;
-  align-items: center;
-  width: 10.85px;
-  margin: 1px 3px 0 0;
-}
-
-.totalPriceContainer p {
-  margin: 0;
+.totalPrice span {
+  margin-right: 4px;
 }
 
 .backToHomeBtn {
