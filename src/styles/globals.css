@@ -77,7 +77,7 @@ input:not(input[type="submit"]):not(input[type="button"]):not(
 input:focus {
   /* outline: 1px solid var(--color-accent);
   outline-offset: -1px; */
-  box-shadow: 0 0 0 2pt #cd2c2c;
+  box-shadow: 0 0 0 2pt var(--color-accent);
   outline: 0;
 }
 
