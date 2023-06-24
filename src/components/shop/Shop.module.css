@@ -10,7 +10,7 @@
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  max-width: 381px;
+  /* max-width: 381px; */
   height: 165px;
   border-radius: 8px;
   margin-inline: auto;
@@ -258,5 +258,11 @@
 
   .shopText {
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .section {
+    gap: 35px;
   }
 }
