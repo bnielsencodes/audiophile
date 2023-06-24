@@ -23,7 +23,7 @@ export default function Navigation(props) {
     <>
       <div
         className={styles.navContainer}
-        style={{ background: props.indexNav ? "#141414" : "#000" }}
+        style={{ background: props.indexNav ? "#131313" : "#000" }}
       >
         <nav className={styles.nav}>
           <div className={`${styles.tapLeft} ${styles.hiddenLg}`}>
