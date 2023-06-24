@@ -138,10 +138,12 @@ h1 {
   width: 160px;
   height: 48px;
   border: 0;
+  border-radius: 0;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 17.76px;
+  -webkit-appearance: none;
 }
 
 .btn--black {
