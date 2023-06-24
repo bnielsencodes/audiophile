@@ -35,7 +35,7 @@
 
 .heading {
   margin: 17px 0 16px;
-  color: var(--color-neutral-400);
+  color: var(--color-neutral-500);
   font-size: 24px;
   font-weight: 600;
   line-height: 28px;
@@ -130,7 +130,7 @@
   justify-content: center;
   padding: 15px 24px 19px;
   border-radius: 0 0 8px 8px;
-  background: var(--color-neutral-400);
+  background: var(--color-neutral-500);
 }
 
 .totalText {
