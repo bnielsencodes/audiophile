@@ -20,7 +20,6 @@
 body {
   position: relative;
   z-index: 0;
-  max-width: 1920px;
   margin: 0 auto;
   font: normal 500 15px/25px "Manrope", sans-serif;
 }
@@ -39,8 +38,24 @@ body::-webkit-scrollbar {
 
 .main {
   position: relative;
+  max-width: 1920px;
   padding: 0 24px;
   margin-top: 100px;
+  margin-inline: auto;
+}
+
+.main--current-product {
+  position: relative;
+  max-width: 1920px;
+  padding: 0 24px;
+  margin-top: 0;
+  margin-inline: auto;
+}
+
+#main--products {
+  max-width: 1920px;
+  margin-top: 64px;
+  margin-inline: auto;
 }
 
 input {
@@ -153,12 +168,6 @@ h1 {
   display: none;
 }
 
-.main--current-product {
-  position: relative;
-  padding: 0 24px;
-  margin-top: 0;
-}
-
 .overline {
   margin: 24px 0 0 2px;
   color: var(--color-accent);
@@ -171,10 +180,6 @@ h1 {
 
 .overline--current-product {
   margin-top: -7px;
-}
-
-#main--products {
-  margin-top: 64px;
 }
 
 .category-items {
@@ -239,12 +244,17 @@ h1 {
 }
 
 @media (min-width: 1024px) {
-  .main--current-product {
-    padding-inline: 120px;
-  }
-
   #main--products {
     margin-top: 160px;
+  }
+
+  .main {
+    padding: 0 120px;
+    margin-top: 130px;
+  }
+
+  .main--current-product {
+    padding-inline: 120px;
   }
 
   .btn {
@@ -286,15 +296,6 @@ h1 {
 
   header {
     padding: 0 100px;
-  }
-
-  .main {
-    padding: 0 120px;
-    margin-top: 130px;
-  }
-
-  .main--current-product {
-    padding-inline: 120px;
   }
 
   .overline {

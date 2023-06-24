@@ -17,6 +17,7 @@
 
 .main {
   padding: 0 24px 97px;
+  max-width: 1920px;
 }
 
 @media (min-width: 768px) {
