@@ -10,7 +10,7 @@
 .img {
   width: 100%;
   /* max-width: 381px; */
-  height: 0;
+  /* height: 0; */
   height: auto;
   border-radius: 8px;
 }
