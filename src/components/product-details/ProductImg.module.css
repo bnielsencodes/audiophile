@@ -30,3 +30,9 @@
     height: 480px;
   }
 }
+
+@media (min-width: 1920px) {
+  .img {
+    max-width: 630px;
+  }
+}
