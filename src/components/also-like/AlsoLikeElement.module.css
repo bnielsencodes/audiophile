@@ -7,10 +7,13 @@
   margin: 25px 0 50px;
 }
 
+.imgContainer {
+  width: 100%;
+  height: auto;
+}
+
 .img {
   width: 100%;
-  /* max-width: 381px; */
-  /* height: 0; */
   height: auto;
   border-radius: 8px;
 }
