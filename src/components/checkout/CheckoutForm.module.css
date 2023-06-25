@@ -15,6 +15,8 @@
 
 .section {
   margin-bottom: 13px;
+  border: 0;
+  padding: 0;
 }
 
 .sectionHeading {

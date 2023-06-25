@@ -129,8 +129,10 @@ export default function CheckoutForm(props) {
             <div className={styles.formContainer}>
               <div className={styles.checkoutForm} id={styles.checkoutFormId}>
                 <h1 className={styles.formHeading}>Checkout</h1>
-                <div className={styles.section}>
-                  <h2 className={styles.sectionHeading}>Billing Details</h2>
+                <fieldset className={styles.section}>
+                  <legend className={styles.sectionHeading}>
+                    Billing Details
+                  </legend>
                   <div className={styles.nameEmailContainer}>
                     <div className={styles.nameContainer}>
                       <TextInput
@@ -159,10 +161,12 @@ export default function CheckoutForm(props) {
                       maxLength={14}
                     />
                   </div>
-                </div>
+                </fieldset>
 
-                <div className={styles.section}>
-                  <h2 className={styles.sectionHeading}>Shipping Info</h2>
+                <fieldset className={styles.section}>
+                  <legend className={styles.sectionHeading}>
+                    Shipping Info
+                  </legend>
                   <div className={styles.addressContainer}>
                     <TextInput
                       label="Your Address"
@@ -201,14 +205,14 @@ export default function CheckoutForm(props) {
                       maxLength={56}
                     />
                   </div>
-                </div>
+                </fieldset>
 
-                <div className={styles.section}>
-                  <h2
+                <fieldset className={styles.section}>
+                  <legend
                     className={`${styles.sectionHeading} ${styles.paymentMethodHeading}`}
                   >
                     Payment Details
-                  </h2>
+                  </legend>
                   <fieldset className={styles.paymentMethodContainer}>
                     <label
                       className={`${styles.label} ${styles.radioGroupLabel}`}
@@ -330,7 +334,7 @@ export default function CheckoutForm(props) {
                       )}
                     </div>
                   </div>
-                </div>
+                </fieldset>
               </div>
               <div className={styles.summary}>
                 <Summary
