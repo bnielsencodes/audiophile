@@ -39,22 +39,23 @@ body::-webkit-scrollbar {
 .main {
   position: relative;
   max-width: 1920px;
-  padding: 0 24px;
-  margin-top: 100px;
+  padding: 100px 24px 0;
   margin-inline: auto;
+  background: var(--color-neutral-200);
 }
 
 .main--current-product {
   position: relative;
   max-width: 1920px;
-  padding: 0 24px;
+  padding: 0 24px 23px;
   margin-top: 0;
   margin-inline: auto;
+  background: var(--color-neutral-200);
 }
 
 #main--products {
   max-width: 1920px;
-  margin-top: 64px;
+  padding-top: 64px;
   margin-inline: auto;
 }
 
@@ -134,10 +135,6 @@ h6 {
   margin: 0;
 }
 
-/* h1 {
-  color: var(--color-neutral-100);
-} */
-
 .btn {
   width: 160px;
   height: 48px;
@@ -210,8 +207,8 @@ h6 {
   }
 
   .main {
+    padding-top: 148px;
     padding-inline: 39px;
-    margin-top: 148px;
   }
 
   .main--current-product {
@@ -219,7 +216,7 @@ h6 {
   }
 
   #main--products {
-    margin-top: 121px;
+    padding-top: 121px;
   }
 
   .overline {
@@ -251,16 +248,16 @@ h6 {
 
 @media (min-width: 1024px) {
   #main--products {
-    margin-top: 160px;
+    padding-top: 160px;
   }
 
   .main {
-    padding: 0 120px;
-    margin-top: 130px;
+    padding: 130px 120px 140px;
   }
 
   .main--current-product {
     padding-inline: 120px;
+    padding-bottom: 160px;
   }
 
   .btn {
@@ -318,9 +315,7 @@ h6 {
 
 @media (min-width: 1440px) {
   .main {
-    padding-inline: 165px;
-    padding: 0 160px;
-    margin-top: 199px;
+    padding: 199px 160px 200px;
   }
 
   .main--current-product {

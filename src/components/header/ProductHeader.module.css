@@ -3,8 +3,8 @@
   justify-content: flex-start;
   align-items: center;
   height: 64px;
-  margin-left: 24px;
-  background: none;
+  padding-left: 24px;
+  background: var(--color-neutral-200);
 }
 
 .link {
@@ -18,7 +18,7 @@
   .header {
     height: 82px;
     padding: 0 39px;
-    margin-left: 0;
+    /* margin-left: 0; */
   }
 
   .link {

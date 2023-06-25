@@ -57,7 +57,7 @@
   .about {
     display: flex;
     gap: 30px;
-    margin-bottom: 140px;
+    /* margin-bottom: 140px; */
   }
 
   .heading {
@@ -91,7 +91,7 @@
 
 @media (min-width: 1440px) {
   .about {
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
   }
 
   .heading {
