@@ -20,8 +20,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/audiophile-ecommerce-site-built-with-nextjs-react-and-css-modules-a1uNv-ckVd](https://www.frontendmentor.io/solutions/audiophile-ecommerce-site-built-with-nextjs-react-and-css-modules-a1uNv-ckVd))
+- Live Site URL: [https://audiophile-bnielsencodes.vercel.app](https://audiophile-bnielsencodes.vercel.app)
 
 ## My process
 
