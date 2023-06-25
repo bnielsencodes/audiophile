@@ -11,12 +11,12 @@ export default function Features(props) {
       <section className={styles.container}>
         {/* <!-- FEATURES SECTION --> */}
         <article className={styles.text}>
-          <h5>Features</h5>
+          <h2>Features</h2>
           <p>{props.product.features}</p>
         </article>
         {/* <!-- IN THE BOX SECTION --> */}
         <div className={styles.inTheBox}>
-          <h5>In The Box</h5>
+          <h2>In The Box</h2>
           <div className={styles.listContainer}>
             <ul className={styles.list}>{inTheBox}</ul>
           </div>

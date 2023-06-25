@@ -1,4 +1,4 @@
-.text h5 {
+.text h2 {
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.86px;
@@ -20,7 +20,7 @@
   margin: 75px 0 72px;
 }
 
-.inTheBox h5 {
+.inTheBox h2 {
   font-size: 24px;
   letter-spacing: 0.86px;
 }
@@ -31,7 +31,7 @@
 }
 
 @media (min-width: 768px) {
-  .text h5 {
+  .text h2 {
     margin-bottom: 31px;
     font-size: 32px;
     letter-spacing: 1.14px;
@@ -47,7 +47,7 @@
     margin: 120px 0 100px;
   }
 
-  .inTheBox h5 {
+  .inTheBox h2 {
     flex: 1 1 33%;
     width: 0;
     margin-top: 2px;
@@ -76,7 +76,7 @@
     flex: 1 1 66%;
   }
 
-  .text h5 {
+  .text h2 {
     margin-bottom: 32px;
   }
 
@@ -92,7 +92,7 @@
     letter-spacing: 1.14px;
   }
 
-  .inTheBox h5 {
+  .inTheBox h2 {
     flex: none;
     width: 100%;
     margin-bottom: 33px;

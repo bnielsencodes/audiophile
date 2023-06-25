@@ -18,7 +18,7 @@ export default function Summary(props) {
   return (
     <>
       <div className={styles.summary}>
-        <h4 className={styles.heading}>Summary</h4>
+        <h3 className={styles.heading}>Summary</h3>
         <div>{productsCount > 0 && summaryItems}</div>
 
         <div className={styles.totalSection}>

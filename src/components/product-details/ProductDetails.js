@@ -25,7 +25,7 @@ export default function ProductDetails(props) {
               New Product
             </p>
           )}
-          <h2 className={styles.heading}>{product.name}</h2>
+          <h1 className={styles.heading}>{product.name}</h1>
           <p className={styles.text}>{product.description}</p>
           <p className={styles.price}>
             <span>$</span>

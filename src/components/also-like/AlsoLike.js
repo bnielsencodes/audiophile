@@ -9,7 +9,7 @@ export default function AlsoLike(props) {
   return (
     <>
       <section className={styles.alsoLike}>
-        <h5 className={styles.heading}>You May Also Like</h5>
+        <h3 className={styles.heading}>You May Also Like</h3>
         <div className={styles.container}>{alsoLikeElements}</div>
       </section>
     </>

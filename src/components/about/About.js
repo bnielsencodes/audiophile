@@ -33,9 +33,9 @@ export default function About() {
         </div>
         <div className={styles.textContainer}>
           <article className={styles.textContainerInner}>
-            <h2 className={styles.heading}>
+            <h5 className={styles.heading}>
               Bringing you the <span>best</span> audio gear
-            </h2>
+            </h5>
             <p className={styles.text}>
               Located at the heart of New York City, Audiophile is the premier
               store for high end headphones, earphones, speakers and audio

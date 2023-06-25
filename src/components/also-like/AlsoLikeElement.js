@@ -33,7 +33,7 @@ export default function AlsoLikeElement(props) {
           />
         </div>
 
-        <h5 className={styles.heading}>{props.item.name}</h5>
+        <h4 className={styles.heading}>{props.item.name}</h4>
         <Link href={props.item.path}>
           <input
             className="btn btn--orange btn-text--white"

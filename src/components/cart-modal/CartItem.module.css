@@ -24,18 +24,16 @@
   margin-bottom: 8px;
 }
 
-.item h6 {
-  letter-spacing: 0;
-}
-
-.productDetails h6,
+.shortName,
 .price {
   font-weight: 700;
   line-height: 25px;
 }
 
-.productDetails h6 {
+.shortName {
+  margin: 0;
   font-size: 15px;
+  letter-spacing: 0;
 }
 
 .price {

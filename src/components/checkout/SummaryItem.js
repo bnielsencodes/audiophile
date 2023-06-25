@@ -24,7 +24,7 @@ export default function SummaryItem(props) {
         </div>
         <div className={styles.productDetails}>
           <div className={styles.nameQuantityContainer}>
-            <h6>{productData.shortName}</h6>
+            <p className={styles.shortName}>{productData.shortName}</p>
             <p className={styles.quantity}>x{quantity}</p>
           </div>
           <p className={styles.price}>

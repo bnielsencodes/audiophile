@@ -25,7 +25,7 @@ export default function CartItem(props) {
             />
           </div>
           <div className={styles.productDetails}>
-            <h6>{productData.shortName}</h6>
+            <p className={styles.shortName}>{productData.shortName}</p>
             <p className={styles.price}>
               <span>$</span>
               {productData.priceString}
