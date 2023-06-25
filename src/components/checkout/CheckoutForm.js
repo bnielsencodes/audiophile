@@ -1,5 +1,7 @@
 import { Formik, Field, Form, useField } from "formik";
 import * as Yup from "yup";
+import Image from "next/image";
+import cashOnDeliveryIcon from "/public/assets/checkout/icon-cash-on-delivery.svg";
 import Summary from "./Summary";
 import styles from "./CheckoutForm.module.css";
 
@@ -297,18 +299,9 @@ export default function CheckoutForm(props) {
                     </div>
                   </fieldset>
 
-                  <div className={styles.eMoneyContainer}>
-                    <div className={styles.eNumberContainer}>
-                      {values.paymentMethod !== "eMoney" ? (
-                        <TextInput
-                          label="e-Money Number"
-                          name="eMoneyNumber"
-                          type="text"
-                          placeholder="238521993"
-                          maxLength={9}
-                          disabled
-                        />
-                      ) : (
+                  {values.paymentMethod === "eMoney" ? (
+                    <div className={styles.eMoneyContainer}>
+                      <div className={styles.eNumberContainer}>
                         <TextInput
                           label="e-Money Number"
                           name="eMoneyNumber"
@@ -316,19 +309,8 @@ export default function CheckoutForm(props) {
                           placeholder="238521993"
                           maxLength={9}
                         />
-                      )}
-                    </div>
-                    <div className={styles.ePinContainer}>
-                      {values.paymentMethod !== "eMoney" ? (
-                        <TextInput
-                          label="e-Money PIN"
-                          name="eMoneyPin"
-                          type="text"
-                          placeholder="6891"
-                          maxLength={4}
-                          disabled
-                        />
-                      ) : (
+                      </div>
+                      <div className={styles.ePinContainer}>
                         <TextInput
                           label="e-Money PIN"
                           name="eMoneyPin"
@@ -336,9 +318,27 @@ export default function CheckoutForm(props) {
                           placeholder="6891"
                           maxLength={4}
                         />
-                      )}
+                      </div>
                     </div>
-                  </div>
+                  ) : values.paymentMethod === "cashOnDelivery" ? (
+                    <div className={styles.message}>
+                      <div className={styles.cashOnDeliveryIcon}>
+                        <Image
+                          src={cashOnDeliveryIcon}
+                          alt="product"
+                          width="0"
+                          height="0"
+                          sizes="100vw"
+                        />
+                      </div>
+                      <p>
+                        The ‘Cash on Delivery’ option enables you to pay in cash
+                        when our delivery courier arrives at your residence.
+                        Just make sure your address is correct so that your
+                        order will not be cancelled.
+                      </p>
+                    </div>
+                  ) : null}
                 </fieldset>
               </div>
               <div className={styles.summary}>
