@@ -125,6 +125,23 @@
   margin-bottom: 12px;
 }
 
+.message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  margin: 11px 0 31px;
+}
+
+.message p {
+  margin: 0;
+  color: rgb(0 0 0 / 0.5);
+}
+
+.message div {
+  height: 48px;
+}
+
 .submitForm {
   width: 100%;
 }
