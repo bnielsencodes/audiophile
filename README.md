@@ -68,6 +68,7 @@ Some things I plan on implementing into this project in the near future:
 - [Formik Docs](https://formik.org/docs)
 - [How to Add a Delay to onClick Function](https://forum.freecodecamp.org/t/how-to-add-a-delay-to-this-onclick-function/282168)
 - [Change Style of Input Field when Error Occurs in Formik](https://stackoverflow.com/questions/62256709/change-style-of-existing-input-fields-whenever-error-occurs-in-react-formik/66395574#66395574)
+- [Scroll To Top of Page When Button Clicked](https://levelup.gitconnected.com/how-to-create-a-scroll-to-top-button-in-reactjs-7b2f2563d6b0)
 
 ## Author
 
