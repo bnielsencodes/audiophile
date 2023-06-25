@@ -58,6 +58,11 @@ export default function CheckoutForm(props) {
   const cityRegEx = /(?:[A-Z][a-z.-]+[ ]?)+/;
   const countryRegEx = /[a-zA-Z]{2,}/;
 
+  // page scrolls to top of main when "continue and pay" button is clicked
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 96, behavior: "smooth" });
+  };
+
   return (
     <>
       <Formik
@@ -343,6 +348,7 @@ export default function CheckoutForm(props) {
                       name="submit"
                       type="submit"
                       value="Continue & Pay"
+                      onClick={handleScrollToTop}
                     />
                   }
                 />
