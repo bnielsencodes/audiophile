@@ -39,6 +39,14 @@
   line-height: 25px;
 }
 
+.copyLink {
+  color: var(--color-accent);
+}
+
+.copyLink:hover {
+  opacity: 0.8;
+}
+
 @media (min-width: 768px) {
   .footer {
     padding: 0 38px 20px;

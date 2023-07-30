@@ -37,7 +37,11 @@ export default function Footer() {
         <div className={styles.footerMdBottom}>
           {/* FOOTER COPYRIGHT */}
           <small className={styles.copy}>
-            Copyright 2023. All Rights Reserved
+            Coded by{" "}
+            <a className={styles.copyLink} href="https://bnielsen.dev">
+              Brandon Nielsen
+            </a>
+            , 2023
           </small>
           <FooterSocials />
         </div>
