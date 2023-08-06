@@ -348,7 +348,7 @@ h6 {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
   .main--current-product {
     max-width: 1470px;
     padding-inline: 0;
