@@ -51,9 +51,3 @@
     padding: 0 165px 141px;
   }
 }
-
-@media (min-width: 1440px) {
-  .header {
-    padding-left: 160px;
-  }
-}
