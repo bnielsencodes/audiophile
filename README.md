@@ -9,7 +9,6 @@
   - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -40,14 +39,6 @@
 - [Mobile-first workflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 - [VS Code](https://code.visualstudio.com/) - Integrated development environment
 
-### What I learned
-
-This was my first time using the Nextjs framework. Due to the extensive documentation, it wasn't very difficult to do whatever I needed to. The Image and Link components that Next provides are both very helpful. Also, having to not have to take care of routing code was great.
-
-This was also my first time using Formik and Yup. Formik is great because it saves you a lot of time and writing code, but there are some learning curves and unfortunately there is not a ton of great documentation or support online. The tutorial Formik provides on their website is very helpful, but there are still a lot of things that it does not explain. So it wasn't easy to accomplish some of the things I wanted to do, but overall, I am happy with what I was able to accomplish with Formik.
-
-CSS modules was another first for me on this project. I find it very helpful to have the styles localized the way they are in css modules, but I did miss the nesting when utilizing Sass.
-
 ### Continued development
 
 Some things I plan on implementing into this project in the near future:
@@ -72,7 +63,7 @@ Some things I plan on implementing into this project in the near future:
 
 ## Author
 
-- Website - [Brandon Nielsen](https://www.bnielsen.dev)
-- LinkedIn - [Brandon Nielsen](https://www.linkedin.com/in/bnielsencodes)
+- Portfolio Website - [bnielsen.dev](https://bnielsen.dev)
+- LinkedIn - [/in/bnielsencodes](https://linkedin.com/in/bnielsencodes)
 - Twitter - [@bnielsencodes](https://twitter.com/bnielsencodes)
 - Frontend Mentor - [@bnielsencodes](https://www.frontendmentor.io/profile/bnielsencodes)
