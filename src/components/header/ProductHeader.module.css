@@ -18,7 +18,6 @@
   .header {
     height: 82px;
     padding: 0 39px;
-    /* margin-left: 0; */
   }
 
   .link {
@@ -43,5 +42,13 @@
   .header {
     height: 160px;
     padding: 0 165px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    max-width: 1470px;
+    padding: 0;
+    margin-inline: auto;
   }
 }

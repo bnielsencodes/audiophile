@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
 @import url("normalize.css");
 
+#__next {
+  background: #fafafa;
+}
+
 :root {
   --color-neutral-100: #fff;
   --color-neutral-200: #fafafa;
@@ -336,5 +340,17 @@ h6 {
     font-size: 14px;
     line-height: 19.12px;
     letter-spacing: 10px;
+  }
+
+  .category-items {
+    max-width: 1120px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main--current-product {
+    max-width: 1470px;
+    padding-inline: 0;
   }
 }
