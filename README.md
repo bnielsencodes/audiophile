@@ -6,7 +6,7 @@
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
-  - [Links](#links)
+  - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -20,9 +20,8 @@
 
 ![screenshot preview of Audiophile website](public/assets/screenshots/preview.jpg)
 
-### Links
+### Link
 
-- Solution URL: [https://www.frontendmentor.io/solutions/audiophile-ecommerce-site-built-with-nextjs-react-and-css-modules-a1uNv-ckVd](https://www.frontendmentor.io/solutions/audiophile-ecommerce-site-built-with-nextjs-react-and-css-modules-a1uNv-ckVd))
 - Live Site URL: [https://audiophile-bnielsencodes.vercel.app](https://audiophile-bnielsencodes.vercel.app)
 
 ## My process
@@ -31,14 +30,14 @@
 
 - [Next.js](https://nextjs.org/) - React framework
 - [React](https://reactjs.org/) - JS library
-- JavaScript
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [CSS Modules](https://github.com/css-modules/css-modules)
 - [Formik](https://formik.org/) - Open source form library for React
 - [Yup](https://github.com/jquense/yup) - Used for Formik form validation
-- Semantic HTML5 markup
-- CSS custom properties
-- CSS Flexbox
-- Mobile-first workflow
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+- [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+- [Semantic HTML5 markup](https://www.w3schools.com/html/html5_semantic_elements.asp)
+- [Mobile-first workflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 - [VS Code](https://code.visualstudio.com/) - Integrated development environment
 
 ### What I learned
@@ -53,7 +52,6 @@ CSS modules was another first for me on this project. I find it very helpful to 
 
 Some things I plan on implementing into this project in the near future:
 
-- Remove the "e-Money" payment option and replace it with credit/debit card payment option, add new inputs for card information.
 - Improve accessibility
 - Implement localStorage for cart
 
