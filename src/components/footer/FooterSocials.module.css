@@ -35,18 +35,38 @@
 }
 
 @media (min-width: 1024px) {
+  .iconContainer svg {
+    color: var(--color-neutral-100);
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+  }
+
   .iconContainer:hover svg {
     color: var(--color-accent);
-    -webkit-transition: fill 0.2s linear;
-    transition: fill 0.2s linear;
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+  }
+
+  .briefcaseContainer {
+    background: var(--color-neutral-100);
+    -webkit-transition: background 0.2s linear;
+    transition: background 0.2s linear;
   }
 
   .briefcaseContainer:hover {
     background: var(--color-accent);
+    -webkit-transition: background 0.2s linear;
+    transition: background 0.2s linear;
+  }
+
+  .briefcaseContainer svg {
+    color: var(--color-neutral-400);
   }
 
   .briefcaseContainer:hover svg {
     color: var(--color-neutral-400);
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
   }
 
   .socials {

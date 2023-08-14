@@ -10,7 +10,6 @@
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  /* max-width: 381px; */
   height: 165px;
   border-radius: 8px;
   margin-inline: auto;
@@ -216,6 +215,11 @@
       -webkit-transform: translateY(-4px);
       transform: translateY(-4px);
     }
+  }
+
+  .item .text {
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
   }
 
   .item:hover .text {

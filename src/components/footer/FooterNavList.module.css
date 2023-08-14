@@ -26,6 +26,12 @@
 }
 
 @media (min-width: 1024px) {
+  .link {
+    color: var(--color-neutral-100);
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+  }
+
   .link:hover {
     color: var(--color-accent);
     -webkit-transition: color 0.2s linear;

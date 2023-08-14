@@ -41,10 +41,9 @@
 
 .copyLink {
   color: var(--color-accent);
-}
-
-.copyLink:hover {
-  opacity: 0.8;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 
 @media (min-width: 768px) {
@@ -104,11 +103,6 @@
     margin: 0;
   }
 
-  .logo:hover {
-    filter: brightness(0%) saturate(100%) invert(82%) sepia(47%) saturate(4886%)
-      hue-rotate(327deg) brightness(90%) contrast(86%);
-  }
-
   .text {
     width: 550px;
     margin: 16px 0 56px;
@@ -124,4 +118,11 @@
   .footer {
     padding-inline: 160px;
   }
+
+  .copyLink:hover {
+    opacity: 0.8;
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+  }
+
 }

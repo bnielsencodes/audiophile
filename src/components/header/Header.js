@@ -17,7 +17,7 @@ export default function Header() {
           </p>
           <Link className={styles.link} href="/headphones/xx99-mark-II">
             <input
-              className={`${styles.headerBtn} btn btn--orange btn-text--white`}
+              className="btn btn--orange btn-text--white"
               type="button"
               value="See Product"
             />

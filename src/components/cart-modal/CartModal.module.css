@@ -136,27 +136,16 @@
     margin-top: 30px;
   }
 
-  .removeAll:hover {
-    color: var(--color-accent);
+  .removeAll {
     -webkit-transition: color 0.2s linear;
     transition: color 0.2s linear;
-    cursor: pointer;
   }
 
-  .removeContainer:hover,
-  .addContainer:hover {
-    background: #d3d3d3;
-    cursor: pointer;
-    -webkit-transition: background 0.2s linear;
-    transition: background 0.2s linear;
-  }
-
-  .removeContainer:hover .removeBtn,
-  .addContainer:hover .addBtn {
+  .removeAll:hover {
     color: var(--color-accent);
-    transform: scale(1.15);
-    -webkit-transition: color 0.2s linear, transform 0.2s linear;
-    transition: color 0.2s linear, transform 0.2s linear;
+    cursor: pointer;
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
   }
 }
 

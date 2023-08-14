@@ -138,15 +138,19 @@
     width: 23.33px;
   }
 
-  .burgerIcon:hover,
-  .linkComponent .logo:hover,
-  .cartIcon:hover {
-    filter: brightness(0%) saturate(100%) invert(82%) sepia(47%) saturate(4886%)
-      hue-rotate(327deg) brightness(90%) contrast(86%);
-  }
-
   .cartIcon:hover {
     cursor: pointer;
+  }
+
+  .cartIcon:hover path {
+    fill: var(--color-accent);
+    -webkit-transition: fill 0.2s linear;
+    transition: fill 0.2s linear;
+  }
+
+  .cartIcon path {
+    -webkit-transition: fill 0.2s linear;
+    transition: fill 0.2s linear;
   }
 }
 
