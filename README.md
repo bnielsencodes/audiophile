@@ -1,13 +1,14 @@
-# Audiophile - An e-commerce website for a fictional company named Audiophile that is a one stop shop for all things audio
+# Audiophile
+
+#### An e-commerce website for a fictional company named Audiophile that is a one stop shop for all things audio
 
 ## Table of contents
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
-  - [Links](#links)
+  - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -18,9 +19,8 @@
 
 ![screenshot preview of Audiophile website](public/assets/screenshots/preview.jpg)
 
-### Links
+### Link
 
-- Solution URL: [https://www.frontendmentor.io/solutions/audiophile-ecommerce-site-built-with-nextjs-react-and-css-modules-a1uNv-ckVd](https://www.frontendmentor.io/solutions/audiophile-ecommerce-site-built-with-nextjs-react-and-css-modules-a1uNv-ckVd))
 - Live Site URL: [https://audiophile-bnielsencodes.vercel.app](https://audiophile-bnielsencodes.vercel.app)
 
 ## My process
@@ -29,29 +29,20 @@
 
 - [Next.js](https://nextjs.org/) - React framework
 - [React](https://reactjs.org/) - JS library
-- JavaScript
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [CSS Modules](https://github.com/css-modules/css-modules)
 - [Formik](https://formik.org/) - Open source form library for React
 - [Yup](https://github.com/jquense/yup) - Used for Formik form validation
-- Semantic HTML5 markup
-- CSS custom properties
-- CSS Flexbox
-- Mobile-first workflow
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+- [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+- [Semantic HTML5 markup](https://www.w3schools.com/html/html5_semantic_elements.asp)
+- [Mobile-first workflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 - [VS Code](https://code.visualstudio.com/) - Integrated development environment
-
-### What I learned
-
-This was my first time using the Nextjs framework. Due to the extensive documentation, it wasn't very difficult to do whatever I needed to. The Image and Link components that Next provides are both very helpful. Also, having to not have to take care of routing code was great.
-
-This was also my first time using Formik and Yup. Formik is great because it saves you a lot of time and writing code, but there are some learning curves and unfortunately there is not a ton of great documentation or support online. The tutorial Formik provides on their website is very helpful, but there are still a lot of things that it does not explain. So it wasn't easy to accomplish some of the things I wanted to do, but overall, I am happy with what I was able to accomplish with Formik.
-
-CSS modules was another first for me on this project. I find it very helpful to have the styles localized the way they are in css modules, but I did miss the nesting when utilizing Sass.
 
 ### Continued development
 
 Some things I plan on implementing into this project in the near future:
 
-- Remove the "e-Money" payment option and replace it with credit/debit card payment option, add new inputs for card information.
 - Improve accessibility
 - Implement localStorage for cart
 
@@ -72,7 +63,7 @@ Some things I plan on implementing into this project in the near future:
 
 ## Author
 
-- Website - [Brandon Nielsen](https://www.bnielsen.dev)
-- LinkedIn - [Brandon Nielsen](https://www.linkedin.com/in/bnielsencodes)
+- Portfolio Website - [bnielsen.dev](https://bnielsen.dev)
+- LinkedIn - [/in/bnielsencodes](https://linkedin.com/in/bnielsencodes)
 - Twitter - [@bnielsencodes](https://twitter.com/bnielsencodes)
 - Frontend Mentor - [@bnielsencodes](https://www.frontendmentor.io/profile/bnielsencodes)
