@@ -125,4 +125,31 @@
     transition: opacity 0.2s linear;
   }
 
+  .copyLink::before,
+  .copyLink::after {
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    left: 72;
+    width: 117px;
+    height: 2px;
+    background: var(--color-accent);
+    opacity: 0.8;
+    pointer-events: none;
+  }
+
+  .copyLink::before {
+    content: "";
+  }
+
+  .underlineAnimation:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+  }
+
+  .underlineAnimation::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+  }
 }

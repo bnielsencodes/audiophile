@@ -12,18 +12,16 @@ export default function Footer() {
           <div className={styles.border}></div>
           <div className={styles.footerLg}>
             {/* FOOTER LOGO */}
-            <Link className={styles.linkComponent} href="/">
-              <div className={styles.logoContainer}>
-                <Image
-                  className={styles.logo}
-                  src="/assets/shared/desktop/logo.svg"
-                  alt="Audiophile brand logo"
-                  width="0"
-                  height="0"
-                  sizes="100vw"
-                />
-              </div>
-            </Link>
+            <div className={styles.logoContainer}>
+              <Image
+                className={styles.logo}
+                src="/assets/shared/desktop/logo.svg"
+                alt="Audiophile brand logo"
+                width="0"
+                height="0"
+                sizes="100vw"
+              />
+            </div>
             <FooterNavList />
           </div>
           {/* FOOTER TEXT */}
@@ -38,7 +36,10 @@ export default function Footer() {
           {/* FOOTER COPYRIGHT */}
           <small className={styles.copy}>
             Coded by{" "}
-            <a className={styles.copyLink} href="https://bnielsen.dev">
+            <a
+              className={`${styles.copyLink} ${styles.underlineAnimation}`}
+              href="https://bnielsen.dev"
+            >
               Brandon Nielsen
             </a>
             , 2023
