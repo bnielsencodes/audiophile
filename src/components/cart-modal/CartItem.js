@@ -1,13 +1,10 @@
-import { useContext } from "react";
-import { CartContext } from "../../CartContext.js";
 import { getProductData } from "../../productsData.js";
 import Image from "next/image";
+import Counter from "../counter/Counter";
 import styles from "./CartItem.module.css";
 
 export default function CartItem(props) {
-  const cart = useContext(CartContext);
   const id = props.product.id;
-  const quantity = props.product.quantity;
   const productData = getProductData(id);
 
   return (
@@ -32,22 +29,7 @@ export default function CartItem(props) {
             </p>
           </div>
         </div>
-        <div className={styles.quantityContainer}>
-          <div className={styles.removeContainer}>
-            <p
-              className={styles.removeBtn}
-              onClick={() => cart.removeOneFromCart(id)}
-            >
-              &minus;
-            </p>
-          </div>
-          <p className={styles.quantity}>{quantity}</p>
-          <div className={styles.addContainer}>
-            <p className={styles.addBtn} onClick={() => cart.addOneToCart(id)}>
-              &#43;
-            </p>
-          </div>
-        </div>
+        <Counter id={id} class="cartItem" />
       </div>
     </>
   );
