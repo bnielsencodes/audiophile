@@ -37,7 +37,7 @@ export default function ProductDetails(props) {
               <Counter
                 id={product.id}
                 product={product}
-                class="productDetails"
+                productDetails={true}
               />
             ) : (
               <>

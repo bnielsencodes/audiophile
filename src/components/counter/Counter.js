@@ -12,9 +12,7 @@ export default function ProductDetails(props) {
       <div
         className={`${styles.quantityContainer} 
         ${
-          props.class == "productDetails"
-            ? styles["quantityContainer--productDetails"]
-            : props.class === "cartItem"
+          props.class === "cartItem"
             ? styles["quantityContainer--cartItem"]
             : null
         }`}
@@ -37,7 +35,7 @@ export default function ProductDetails(props) {
           </p>
         </div>
       </div>
-      {props.class === "productDetails" && (
+      {props.productDetails && (
         <div>
           <input
             className="add-to-cart btn btn--orange btn-text--white"
