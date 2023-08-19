@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "../../CartContext.js";
 import ProductImg from "./ProductImg";
+import Counter from "../counter/Counter.js";
 import Features from "./Features";
 import ImgGallery from "./ImgGallery";
 import styles from "./ProductDetails.module.css";
@@ -33,35 +34,11 @@ export default function ProductDetails(props) {
           </p>
           <div className={styles.addToCart}>
             {productQuantity > 0 ? (
-              <>
-                <div className={styles.quantityContainer}>
-                  <div className={styles.removeContainer}>
-                    <p
-                      className={styles.removeBtn}
-                      onClick={() => cart.removeOneFromCart(product.id)}
-                    >
-                      &minus;
-                    </p>
-                  </div>
-                  <p className={styles.quantity}>{productQuantity}</p>
-                  <div className={styles.addContainer}>
-                    <p
-                      className={styles.addBtn}
-                      onClick={() => cart.addOneToCart(product.id)}
-                    >
-                      &#43;
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <input
-                    className="add-to-cart btn btn--orange btn-text--white"
-                    onClick={() => cart.deleteFromCart(product.id)}
-                    type="button"
-                    value="Remove"
-                  />
-                </div>
-              </>
+              <Counter
+                id={product.id}
+                product={product}
+                class="productDetails"
+              />
             ) : (
               <>
                 <div>
