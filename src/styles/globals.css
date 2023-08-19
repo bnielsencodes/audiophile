@@ -299,22 +299,16 @@ h6 {
 
   .btn--black:hover {
     background: #4c4c4c;
-    -webkit-transition: background 0.2s linear;
-    transition: background 0.2s linear;
   }
 
   .btn--orange:hover {
     background: var(--color-accent-light);
-    -webkit-transition: background 0.2s linear;
-    transition: background 0.2s linear;
   }
 
   .btn--zx7:hover,
   .btn--yx1:hover {
     background: var(--color-neutral-500);
     color: var(--color-neutral-200);
-    -webkit-transition: background 0.2s linear, color 0.2s linear;
-    transition: background 0.2s linear, color 0.2s linear;
   }
 
   header {
