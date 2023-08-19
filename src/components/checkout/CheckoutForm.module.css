@@ -258,6 +258,12 @@
     margin-bottom: 17px;
   }
 
+  .radio,
+  .checkoutPaymentLabel {
+    -webkit-transition: color 0.2s linear, transform 0.2s linear;
+    transition: color 0.2s linear, transform 0.2s linear;
+  }
+
   .radio:hover,
   .checkoutPaymentLabel:hover {
     cursor: pointer;
