@@ -224,8 +224,6 @@
 
   .item:hover .text {
     color: var(--color-accent);
-    -webkit-transition: color 0.2s linear;
-    transition: color 0.2s linear;
   }
 }
 
