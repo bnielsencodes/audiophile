@@ -112,6 +112,17 @@
     position: relative;
     margin-bottom: 28px;
   }
+
+  .underlineAnimation:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+  }
+
+  .underlineAnimation::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -138,16 +149,5 @@
 
   .copyLink::before {
     content: "";
-  }
-
-  .underlineAnimation:hover::before {
-    transform-origin: 0% 50%;
-    transform: scale3d(1, 1, 1);
-  }
-
-  .underlineAnimation::before {
-    transform-origin: 100% 50%;
-    transform: scale3d(0, 1, 1);
-    transition: transform 0.3s;
   }
 }
