@@ -40,40 +40,6 @@
   height: 48px;
 }
 
-.quantityContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 120px;
-  height: 48px;
-  background: var(--color-neutral-300);
-  font-size: 12px;
-}
-
-.removeContainer,
-.addContainer {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  overflow: hidden;
-}
-
-.quantityContainer p {
-  margin: 0;
-  font-size: 13px;
-}
-
-.removeBtn,
-.addBtn {
-  width: 45px;
-  color: rgb(0 0 0 / 0.25);
-  text-align: center;
-}
-
-.quantity {
-  font-weight: 700;
-}
-
 @media (min-width: 768px) {
   .container {
     display: flex;
@@ -110,10 +76,6 @@
   .addToCart {
     justify-content: flex-start;
   }
-
-  .quantityContainer {
-    margin: 0 12px 0 0;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -131,34 +93,6 @@
 
   .price {
     margin-bottom: 22px;
-  }
-
-  .removeContainer,
-  .addContainer {
-    -webkit-transition: background 0.2s linear;
-    transition: background 0.2s linear;
-  }
-
-  .removeContainer:hover,
-  .addContainer:hover {
-    background: #d3d3d3;
-    cursor: pointer;
-    -webkit-transition: background 0.2s linear;
-    transition: background 0.2s linear;
-  }
-
-  .removeContainer .removeBtn,
-  .addContainer .addBtn {
-    -webkit-transition: color 0.2s linear, transform 0.2s linear;
-    transition: color 0.2s linear, transform 0.2s linear;
-  }
-
-  .removeContainer:hover .removeBtn,
-  .addContainer:hover .addBtn {
-    color: var(--color-accent);
-    transform: scale(1.15);
-    -webkit-transition: color 0.2s linear, transform 0.2s linear;
-    transition: color 0.2s linear, transform 0.2s linear;
   }
 }
 
@@ -187,9 +121,5 @@
 
   .price {
     margin-bottom: 31px;
-  }
-
-  .quantityContainer {
-    margin-right: 16px;
   }
 }
