@@ -1,0 +1,93 @@
+.quantityContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  height: 48px;
+  background: var(--color-neutral-300);
+  font-size: 12px;
+}
+
+.quantityContainer--cartItem {
+  width: 96px;
+  height: 32px;
+}
+
+.removeContainer,
+.addContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.quantityContainer p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.removeBtn,
+.addBtn {
+  width: 45px;
+  color: rgb(0 0 0 / 0.25);
+  text-align: center;
+}
+
+.quantityContainer--cartItem .removeBtn,
+.quantityContainer--cartItem .addBtn {
+  width: 29px;
+}
+
+.quantity {
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .quantityContainer {
+    margin: 0 12px 0 0;
+  }
+
+  .quantityContainer--cartItem {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .removeContainer,
+  .addContainer {
+    -webkit-transition: background 0.2s linear;
+    transition: background 0.2s linear;
+  }
+
+  .removeContainer:hover,
+  .addContainer:hover {
+    background: #d3d3d3;
+    cursor: pointer;
+    -webkit-transition: background 0.2s linear;
+    transition: background 0.2s linear;
+  }
+
+  .removeContainer .removeBtn,
+  .addContainer .addBtn {
+    -webkit-transition: color 0.2s linear, transform 0.2s linear;
+    transition: color 0.2s linear, transform 0.2s linear;
+  }
+
+  .removeContainer:hover .removeBtn,
+  .addContainer:hover .addBtn {
+    color: var(--color-accent);
+    transform: scale(1.15);
+    -webkit-transition: color 0.2s linear, transform 0.2s linear;
+    transition: color 0.2s linear, transform 0.2s linear;
+  }
+}
+
+@media (min-width: 1440px) {
+  .quantityContainer {
+    margin-right: 16px;
+  }
+
+  .quantityContainer--cartItem {
+    margin-right: 0;
+  }
+}
