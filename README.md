@@ -1,6 +1,6 @@
 # Audiophile
 
-#### An e-commerce website for a fictional company named Audiophile that is a one stop shop for all things audio
+#### A multi-page e-commerce website with cart functionality and a checkout process.
 
 ## Table of contents
 
